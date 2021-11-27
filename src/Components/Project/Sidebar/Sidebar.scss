@@ -20,7 +20,7 @@ $silver: silver;
     }
   }
   .sidebar--name {
-    color:$silver;
+    color: $silver;
     padding-top: 3px;
     padding-bottom: 3px;
     display: flex;
@@ -31,13 +31,12 @@ $silver: silver;
       font-size: 16px;
       margin-right: 8px;
     }
-    .sidebar--name--icon2{
-        font-size: 22px;
-        margin-right: 5px;
-        margin-left: 2px;
+    .sidebar--name--icon2 {
+      font-size: 22px;
+      margin-right: 5px;
+      margin-left: 2px;
     }
   }
-
 }
 
 .sidebar--name:hover {
