@@ -1,0 +1,16 @@
+$them-color: #3f0e40;
+$text-color: white;
+
+.slackBody{
+    margin: 0;
+    padding: 0;
+    .slackBody--left{
+        background-color: $them-color;
+        width: 20%;
+        height: 100vh;
+    }
+    .slackBody--right{
+        background-color: $them-color;
+        width: 80%;
+    }
+}

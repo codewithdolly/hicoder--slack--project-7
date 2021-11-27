@@ -1,0 +1,20 @@
+$them-color: #3f0e40;
+$text-color: white;
+
+.Sidebar{
+    .Sidebar--name{
+        color: $text-color;
+        padding: 15px;
+        margin-top: -2px;
+        align-items: center;
+        border-bottom: 1px solid rgba(192, 192, 192, 0.377);
+        border-top: 1px solid rgba(192, 192, 192, 0.377);
+    }
+    .Sidebar--edit{
+        background-color: $text-color;
+        color: #3f0e40;
+        padding: 1px 5px;
+        border-radius: 5px;
+        float: right;
+    }
+}

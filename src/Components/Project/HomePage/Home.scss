@@ -1,0 +1,54 @@
+$them-color: #3f0e40;
+$text-color: white;
+
+.HomePage {
+  padding: 10px;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: space-between;
+  background-color: $them-color;
+  color: $text-color;
+  height: 5vh;
+  .HomePage--search {
+    display: flex;
+    .HomePage--search--searchBox {
+      background-color: rgba(255, 255, 255, 0.116);
+      color: $text-color;
+      border-radius: 3px;
+      margin-left: 10px;
+      margin-right: 10px;
+      align-items: center;
+      padding-bottom: 5px;
+      .HomePage--search--searchBox,
+      input {
+        outline: none;
+        border: none;
+        background: transparent;
+        color: $text-color;
+        padding-left: 10px;
+        padding-right: 35rem;
+        margin-right: 10px;
+
+      }
+      .HomePage--search--searchBox,
+      .HomePage--search--searchBox--find{
+          font-size: 20px;
+          align-items: center;
+          text-align: center; 
+          padding-top: 3px;       
+          padding-right: 10px;
+      }
+      ::placeholder {
+        color: $text-color;
+        padding-bottom: 5px;
+      }
+    }
+  }
+  .HomePage--profile,
+  img {
+    width: 30px;
+    border-radius: 3px;
+    text-align: end;
+  }
+}
