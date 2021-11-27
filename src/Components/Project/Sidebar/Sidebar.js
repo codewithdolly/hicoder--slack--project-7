@@ -4,12 +4,13 @@ import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
 import CommentRoundedIcon from "@mui/icons-material/CommentRounded";
 import ForumRoundedIcon from "@mui/icons-material/ForumRounded";
-import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import CastConnectedRoundedIcon from "@mui/icons-material/CastConnectedRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
 import OnlinePredictionRoundedIcon from "@mui/icons-material/OnlinePredictionRounded";
 import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
 import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import ArrowRightIcon from '@mui/icons-material/ArrowRight';
 
 const Sidebar = () => {
   return (
@@ -18,7 +19,6 @@ const Sidebar = () => {
       <h2 className="sidebar--header">
         TheMarketing <ArrowDropDownOutlinedIcon />
         <span className="sidebar--header--edit">
-          {" "}
           <EditOutlinedIcon />
         </span>
       </h2>
@@ -35,7 +35,7 @@ const Sidebar = () => {
           <div>All DMS</div>
         </div>
         <div className="sidebar--name">
-          <AssignmentIndRoundedIcon className="sidebar--name--icon" />
+          <AlternateEmailIcon className="sidebar--name--icon" />
           <div>Mentions & Reactions</div>
         </div>
         <div className="sidebar--name">
@@ -51,19 +51,19 @@ const Sidebar = () => {
 
       {/* Marketing */}
       <div className="sidebar--name">
-        <OnlinePredictionRoundedIcon className="sidebar--name--icon2" />
+        <ArrowRightIcon className="sidebar--name--icon2" />
         <div>Marketing</div>
       </div>
 
       {/* Announcement */}
       <div className="sidebar--name">
-        <CampaignRoundedIcon className="sidebar--name--icon2" />
+        <ArrowRightIcon className="sidebar--name--icon2" />
         <div>Announcement</div>
       </div>
 
       {/* Announcement */}
       <div className="sidebar--name">
-        <ConnectWithoutContactIcon className="sidebar--name--icon2" />
+        <ArrowRightIcon className="sidebar--name--icon2" />
         <div>Direct Message</div>
       </div>
     </div>

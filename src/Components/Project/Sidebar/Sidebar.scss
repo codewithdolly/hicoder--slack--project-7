@@ -32,12 +32,14 @@ $silver: silver;
       margin-right: 8px;
     }
     .sidebar--name--icon2 {
-      font-size: 22px;
+      font-size: 30px;
       margin-right: 5px;
+      margin-left: -8px;
     }
   }
 }
 
 .sidebar--name:hover {
   background-color: #300631;
+  color: $text-color;
 }
