@@ -1,0 +1,22 @@
+$them-color: #3f0e40;
+$text-color: white;
+$silver: silver;
+
+.sidebar--name {
+    color: $silver;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    .sidebar--name--icon {
+      font-size: 16px;
+      margin-right: 8px;
+    }
+  }
+
+  .sidebar--name:hover {
+    background-color: #300631;
+    color: $text-color;
+  }

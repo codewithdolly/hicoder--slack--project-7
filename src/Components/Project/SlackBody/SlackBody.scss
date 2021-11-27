@@ -14,3 +14,8 @@ $text-color: white;
         width: 80%;
     }
 }
+
+.sidebar--name:hover {
+    background-color: #300631;
+    color: $text-color;
+  }

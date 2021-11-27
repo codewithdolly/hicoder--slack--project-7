@@ -7,10 +7,9 @@ import ForumRoundedIcon from "@mui/icons-material/ForumRounded";
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import CastConnectedRoundedIcon from "@mui/icons-material/CastConnectedRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
-import OnlinePredictionRoundedIcon from "@mui/icons-material/OnlinePredictionRounded";
-import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
-import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import Marketing from "./Marketing/Marketing";
+import Announcement from "./Announcement/Announcement";
+import DirectMessage from "./DirectMessage/DirectMessage";
 
 const Sidebar = () => {
   return (
@@ -18,9 +17,10 @@ const Sidebar = () => {
       {/* Slider Header */}
       <h2 className="sidebar--header">
         TheMarketing <ArrowDropDownOutlinedIcon />
-        <span className="sidebar--header--edit">
+        <div className="sidebar--header--user" style={{display:"flex", textAlign:"center"}}><div className="sidebar--header--user--status"></div><div className="sidebar--header--user--userName">Dolly Singh</div></div>
+        <div className="sidebar--header--edit">
           <EditOutlinedIcon />
-        </span>
+        </div>
       </h2>
 
       {/* Slider Body */}
@@ -49,23 +49,9 @@ const Sidebar = () => {
         </div>
       </div>
 
-      {/* Marketing */}
-      <div className="sidebar--name">
-        <ArrowRightIcon className="sidebar--name--icon2" />
-        <div>Marketing</div>
-      </div>
-
-      {/* Announcement */}
-      <div className="sidebar--name">
-        <ArrowRightIcon className="sidebar--name--icon2" />
-        <div>Announcement</div>
-      </div>
-
-      {/* Announcement */}
-      <div className="sidebar--name">
-        <ArrowRightIcon className="sidebar--name--icon2" />
-        <div>Direct Message</div>
-      </div>
+     <Marketing />
+     <Announcement />
+     <DirectMessage />
     </div>
   );
 };
