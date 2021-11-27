@@ -7,9 +7,9 @@ import ForumRoundedIcon from "@mui/icons-material/ForumRounded";
 import AssignmentIndRoundedIcon from "@mui/icons-material/AssignmentIndRounded";
 import CastConnectedRoundedIcon from "@mui/icons-material/CastConnectedRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
-import OnlinePredictionRoundedIcon from '@mui/icons-material/OnlinePredictionRounded';
+import OnlinePredictionRoundedIcon from "@mui/icons-material/OnlinePredictionRounded";
 import CampaignRoundedIcon from "@mui/icons-material/CampaignRounded";
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
 
 const Sidebar = () => {
   return (
