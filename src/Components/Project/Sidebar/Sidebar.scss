@@ -1,20 +1,45 @@
 $them-color: #3f0e40;
 $text-color: white;
+$silver: silver;
 
-.Sidebar{
-    .Sidebar--name{
-        color: $text-color;
-        padding: 15px;
-        margin-top: -2px;
-        align-items: center;
-        border-bottom: 1px solid rgba(192, 192, 192, 0.377);
-        border-top: 1px solid rgba(192, 192, 192, 0.377);
+.sidebar {
+  .sidebar--header {
+    color: $text-color;
+    padding: 15px;
+    margin-top: -2px;
+    align-items: center;
+    border-bottom: 1px solid rgba(192, 192, 192, 0.377);
+    border-top: 1px solid rgba(192, 192, 192, 0.377);
+
+    .sidebar--header--edit {
+      background-color: $text-color;
+      color: #3f0e40;
+      padding: 1px 5px;
+      border-radius: 5px;
+      float: right;
     }
-    .Sidebar--edit{
-        background-color: $text-color;
-        color: #3f0e40;
-        padding: 1px 5px;
-        border-radius: 5px;
-        float: right;
+  }
+  .sidebar--name {
+    color:$silver;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    .sidebar--name--icon {
+      font-size: 16px;
+      margin-right: 8px;
     }
+    .sidebar--name--icon2{
+        font-size: 22px;
+        margin-right: 5px;
+        margin-left: 2px;
+    }
+  }
+
+}
+
+.sidebar--name:hover {
+  background-color: #300631;
 }
