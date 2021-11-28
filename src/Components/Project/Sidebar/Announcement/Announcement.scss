@@ -2,7 +2,8 @@ $them-color: #3f0e40;
 $text-color: white;
 $silver: silver;
 
-.sidebar--name {
+.announcement {
+  .announcement--message {
     color: $silver;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -10,13 +11,22 @@ $silver: silver;
     padding-left: 20px;
     text-align: center;
     align-items: center;
-    .sidebar--name--icon {
-      font-size: 16px;
-      margin-right: 8px;
-    }
-    .sidebar--name--icon2 {
+    .announcement--message--icon {
       font-size: 30px;
       margin-right: 5px;
       margin-left: -8px;
+      justify-content: space-between;
+      display: flex;
     }
   }
+  .announcement--hide {
+    display: none;
+  }
+  .announcement--message:hover + .announcement--hide {
+    display: block;
+    color: $text-color;
+    float: right;
+    margin: 10px;
+    margin-top: -1.6rem;
+  }
+}

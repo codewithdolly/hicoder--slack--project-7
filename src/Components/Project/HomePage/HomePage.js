@@ -4,7 +4,6 @@ import profile from "../Images/dolly2.jpg";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
 import SearchOutlinedIcon from "@mui/icons-material/SearchOutlined";
-import { Sidebar } from "../Index";
 
 const HomePage = () => {
   return (

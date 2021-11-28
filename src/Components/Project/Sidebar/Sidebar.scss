@@ -52,6 +52,17 @@ $silver: silver;
       margin-left: -8px;
     }
   }
+  .sidebar--Announcement {
+    border-bottom: 1px solid rgba(192, 192, 192, 0.377);
+    border-top: 1px solid rgba(192, 192, 192, 0.377);
+    color: $text-color;
+    position: absolute;
+    bottom: 0;
+    width: 20%;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    padding-left: 10px;
+  }
 }
 
 .sidebar--name:hover {

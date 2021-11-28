@@ -29,15 +29,19 @@ $text-color: white;
         padding-left: 10px;
         padding-right: 35rem;
         margin-right: 10px;
-
+        position: relative;
       }
       .HomePage--search--searchBox,
       .HomePage--search--searchBox--find{
           font-size: 20px;
           align-items: center;
           text-align: center; 
-          padding-top: 3px;       
-          padding-right: 10px;
+          // padding-top: 3px;       
+          // padding-right: 10px;
+          top: 5px;
+          left:-10px;
+
+          position: relative;
       }
       ::placeholder {
         color: $text-color;

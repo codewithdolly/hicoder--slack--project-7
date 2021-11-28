@@ -8,11 +8,11 @@ const Marketing = () => {
   return (
     <>
       <div className="market">
-        <div className="marketing">
-          <ArrowRightIcon className="icon" />
+        <div className="market--marketing">
+          <ArrowRightIcon className="market--marketing--icon" />
           <div>Marketing</div>
         </div>
-        <div className="hide">
+        <div className="market--hide">
             <MoreVertIcon />
             <AddIcon />
           </div>

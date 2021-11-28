@@ -1,14 +1,21 @@
 import React from "react";
 import "./Announcement.scss";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import AddIcon from "@mui/icons-material/Add";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Announcement = () => {
   return (
     <>
-      {/* Announcement */}
-      <div className="sidebar--name">
-        <ArrowRightIcon className="sidebar--name--icon2" />
-        <div>Announcement</div>
+     <div className="announcement">
+        <div className="announcement--message">
+          <ArrowRightIcon className="announcement--message--icon" />
+          <div>Announcement</div>
+        </div>
+        <div className="announcement--hide">
+          <MoreVertIcon />
+          <AddIcon />
+        </div>
       </div>
     </>
   );

@@ -10,11 +10,12 @@ import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
 import Marketing from "./Marketing/Marketing";
 import Announcement from "./Announcement/Announcement";
 import DirectMessage from "./DirectMessage/DirectMessage";
+import Test1 from "./Test1";
 
 const Sidebar = () => {
   return (
+    <>
     <div className="sidebar">
-      {/* Slider Header */}
       <h2 className="sidebar--header">
         TheMarketing <ArrowDropDownOutlinedIcon />
         <div className="sidebar--header--user" style={{display:"flex", textAlign:"center"}}><div className="sidebar--header--user--status"></div><div className="sidebar--header--user--userName">Dolly Singh</div></div>
@@ -52,7 +53,15 @@ const Sidebar = () => {
      <Marketing />
      <Announcement />
      <DirectMessage />
+     <Test1 />
+
+     <div className="sidebar--Announcement">
+    Announcement
     </div>
+    </div>
+
+
+    </>
   );
 };
 

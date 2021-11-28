@@ -2,30 +2,31 @@ $them-color: #3f0e40;
 $text-color: white;
 $silver: silver;
 
-.marketing {
-  color: $silver;
-  padding-top: 3px;
-  padding-bottom: 3px;
-  display: flex;
-  padding-left: 20px;
-  text-align: center;
-  align-items: center;
-}
-.icon{
-  font-size: 30px;
-  margin-right: 5px;
-  margin-left: -8px;
-  justify-content: space-between;
-  display: flex;
-}
-.hide {
-
-  display: none;
-}
-
-.marketing:hover + .hide {
-  display: block;
-  color: $text-color;
-  float: right;
-  position: relative;
+.market {
+  .market--marketing {
+    color: $silver;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    padding-left: 20px;
+    text-align: center;
+    align-items: center;
+    .market--marketing--icon {
+      font-size: 30px;
+      margin-right: 5px;
+      margin-left: -8px;
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+  .market--hide {
+    display: none;
+  }
+  .market--marketing:hover + .market--hide {
+    display: block;
+    color: $text-color;
+    float: right;
+    margin: 10px;
+    margin-top: -1.6rem;
+  }
 }

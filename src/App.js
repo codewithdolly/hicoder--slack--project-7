@@ -1,7 +1,6 @@
 import React from 'react';
 import './App.scss';
 import { HomePage, SlackBody } from './Components/Project/Index';
-import Sidebar from './Components/Project/Sidebar/Sidebar';
 
 
 function App() {

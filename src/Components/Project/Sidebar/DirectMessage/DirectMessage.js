@@ -1,17 +1,24 @@
-import React from 'react'
-import "./DirectMessage.scss"
-import ArrowRightIcon from '@mui/icons-material/ArrowRight';
+import React from "react";
+import "./DirectMessage.scss";
+import ArrowRightIcon from "@mui/icons-material/ArrowRight";
+import AddIcon from "@mui/icons-material/Add";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const DirectMessage = () => {
   return (
     <>
-      {/* DirectMessage */}
-      <div className="sidebar--name">
-        <ArrowRightIcon className="sidebar--name--icon2" />
-        <div>Direct Message</div>
+      <div className="singleMessage">
+        <div className="singleMessage--message">
+          <ArrowRightIcon className="singleMessage--message--icon" />
+          <div>DirectMessage</div>
+        </div>
+        <div className="singleMessage--hide">
+          <MoreVertIcon />
+          <AddIcon />
+        </div>
       </div>
     </>
-  )
-}
+  );
+};
 
 export default DirectMessage;
