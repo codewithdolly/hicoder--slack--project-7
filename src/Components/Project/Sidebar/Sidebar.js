@@ -10,9 +10,11 @@ import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
 import Marketing from "./Marketing/Marketing";
 import Announcement from "./Announcement/Announcement";
 import DirectMessage from "./DirectMessage/DirectMessage";
-import Test1 from "./Test1";
+import Test from "../HomePage/Test";
+
 
 const Sidebar = () => {
+
   return (
     <>
     <div className="sidebar">
@@ -41,7 +43,9 @@ const Sidebar = () => {
         </div>
         <div className="sidebar--name">
           <CastConnectedRoundedIcon className="sidebar--name--icon" />
-          <div>Slack Connect</div>
+          {/* <div>Slack Connect</div> */}
+
+
         </div>
 
         <div className="sidebar--name">
@@ -53,7 +57,7 @@ const Sidebar = () => {
      <Marketing />
      <Announcement />
      <DirectMessage />
-     <Test1 />
+     <Test />
 
      <div className="sidebar--Announcement">
     Announcement
