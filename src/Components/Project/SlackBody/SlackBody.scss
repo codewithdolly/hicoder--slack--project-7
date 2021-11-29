@@ -4,14 +4,16 @@ $text-color: white;
 .slackBody{
     margin: 0;
     padding: 0;
+    display: flex;
     .slackBody--left{
         background-color: $them-color;
         width: 20%;
-        height: 100vh;
+        height: 90vh;
     }
     .slackBody--right{
-        background-color: $them-color;
+    
         width: 80%;
+        height: 90vh;
     }
 }
 

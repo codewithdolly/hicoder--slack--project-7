@@ -5,26 +5,25 @@ import IconButton from "@mui/material/IconButton";
 import Menu from "@mui/material/Menu";
 import Avatar from "@mui/material/Avatar";
 import MenuItem from "@mui/material/MenuItem";
-import profile from "../Images/dolly2.jpg";
+import profile from "./Images/dolly2.jpg";
 
 const settings = ["Profile", "Account", "Dashboard", "Logout"];
 
 const Test = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState(null);
   const [anchorElUser, setAnchorElUser] = React.useState(null);
 
-  const handleOpenUserMenu = (event) => {
+  const OpenGroupMenu = (event) => {
     setAnchorElUser(event.currentTarget);
   };
 
-  const handleCloseUserMenu = () => {
+  const closeGroupMenu = () => {
     setAnchorElUser(null);
   };
 
   return (
     <AppBar position="static">
       <Toolbar>
-        <IconButton onClick={handleOpenUserMenu}>
+        <IconButton onClick={OpenGroupMenu} sx={{ p: 0 }}>
           <Avatar alt="Remy Sharp" src={profile} />
         </IconButton>
 
@@ -41,10 +40,10 @@ const Test = () => {
             horizontal: "right",
           }}
           open={Boolean(anchorElUser)}
-          onClose={handleCloseUserMenu}
+          onClose={closeGroupMenu}
         >
           {settings.map((setting) => (
-            <MenuItem onClick={handleCloseUserMenu}>{setting}</MenuItem>
+            <MenuItem onClick={closeGroupMenu}>{setting}</MenuItem>
           ))}
         </Menu>
       </Toolbar>

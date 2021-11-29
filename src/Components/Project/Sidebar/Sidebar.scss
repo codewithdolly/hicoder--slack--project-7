@@ -4,6 +4,7 @@ $silver: silver;
 
 .sidebar {
   .sidebar--header {
+
     color: $text-color;
     padding: 15px;
     margin-top: -2px;
@@ -53,6 +54,7 @@ $silver: silver;
     }
   }
   .sidebar--Announcement {
+    display: flex;
     border-bottom: 1px solid rgba(192, 192, 192, 0.377);
     border-top: 1px solid rgba(192, 192, 192, 0.377);
     color: $text-color;
@@ -61,7 +63,7 @@ $silver: silver;
     width: 20%;
     padding-top: 1rem;
     padding-bottom: 1rem;
-    padding-left: 10px;
+   padding-left: 25px;
   }
 }
 

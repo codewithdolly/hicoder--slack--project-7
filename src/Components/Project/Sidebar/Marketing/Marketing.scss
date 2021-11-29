@@ -8,7 +8,6 @@ $silver: silver;
     padding-top: 3px;
     padding-bottom: 3px;
     display: flex;
-    padding-left: 20px;
     text-align: center;
     align-items: center;
     .market--marketing--icon {
@@ -17,16 +16,24 @@ $silver: silver;
       margin-left: -8px;
       justify-content: space-between;
       display: flex;
+      transform:"rotate(180deg)"
     }
   }
+ 
   .market--hide {
     display: none;
   }
+  #item{
+    background-color: $them-color;
+  }
+
   .market--marketing:hover + .market--hide {
     display: block;
     color: $text-color;
     float: right;
     margin: 10px;
-    margin-top: -1.6rem;
+    margin-left: 6rem;
+    text-align: center;
   }
 }
+
