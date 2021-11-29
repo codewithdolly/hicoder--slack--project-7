@@ -8,7 +8,7 @@ import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import CastConnectedRoundedIcon from "@mui/icons-material/CastConnectedRounded";
 import MoreVertRoundedIcon from "@mui/icons-material/MoreVertRounded";
 import Marketing from "./Marketing/Marketing";
-import Announcement from "./Announcement/Announcement";
+import Announcement from "./Meeting/Meeting";
 import DirectMessage from "./DirectMessage/DirectMessage";
 import MicNoneIcon from "@mui/icons-material/MicNone";
 import { Button } from "@mui/material";

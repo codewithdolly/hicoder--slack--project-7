@@ -52,10 +52,6 @@ const HomePage = () => {
                 horizontal: "right",
               }}
               keepMounted
-              transformOrigin={{
-                vertical: "top",
-                horizontal: "right",
-              }}
               open={Boolean(user)}
               onClose={closeUserMenu}
             >

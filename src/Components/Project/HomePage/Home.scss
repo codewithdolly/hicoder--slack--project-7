@@ -2,7 +2,8 @@ $them-color: #3f0e40;
 $text-color: white;
 
 .HomePage {
-  padding: 10px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   display: flex;
   text-align: center;
   align-items: center;
@@ -51,7 +52,7 @@ $text-color: white;
   img {
     width: 30px;
     border-radius: 3px;
-    margin-right: 40px;
+    padding-right: 50px;
 
   }
 }

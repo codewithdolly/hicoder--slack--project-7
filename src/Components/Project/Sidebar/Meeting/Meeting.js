@@ -1,19 +1,24 @@
 import React, { useState } from "react";
-import "./Marketing.scss";
+import "./Meeting.scss";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import AddIcon from "@mui/icons-material/Add";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Toolbar from "@mui/material/Toolbar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import FaceBook from "../FaceBook/FaceBook";
-import YouTube from "../YouTube/YouTube";
-import Instagram from "../Instagram/Instagram"
-import Twitter from "../Twitter/Twitter";
+import ApiIcon from "@mui/icons-material/Api";
 
-const socialIcon = [<FaceBook />,<YouTube />, <Instagram />, <Twitter />];
+const meeting = [
+  "# Project Management",
+  "# Project Requirement",
+  "# Design",
+  "# Development",
+  "# Backend",
+  "# Testing",
+  "# Deployment",
+];
 
-const Marketing = () => {
+const TeamMeeting = () => {
   const [anchorElUser, setAnchorElUser] = useState(null);
 
   const OpenGroupMenu = (event) => {
@@ -23,27 +28,28 @@ const Marketing = () => {
   const closeGroupMenu = () => {
     setAnchorElUser(null);
   };
-
   return (
     <>
-      <div className="market">
+      <div className="Meeting">
         <Toolbar>
-          <div className="market--marketing" onClick={OpenGroupMenu}>
-            <ArrowRightIcon className="market--marketing--icon" />
-            <div>Marketing</div>
+          <div className="Meeting--message" onClick={OpenGroupMenu}>
+            <ArrowRightIcon className="Meeting--message--icon" />
+            <div>Team Meeting</div>
           </div>
-          <div className="market--hide">
+          <div className="Meeting--hide">
             <MoreVertIcon />
             <AddIcon />
           </div>
           <Menu
             anchorEl={anchorElUser}
-            keepMounted   
+            keepMounted
             open={Boolean(anchorElUser)}
             onClose={closeGroupMenu}
           >
-            {socialIcon.map((setting) => (
-              <MenuItem id= "item" onClick={closeGroupMenu}>{setting}</MenuItem>
+            {meeting.map((setting) => (
+              <MenuItem id="item" onClick={closeGroupMenu}>
+                {setting}
+              </MenuItem>
             ))}
           </Menu>
         </Toolbar>
@@ -52,4 +58,4 @@ const Marketing = () => {
   );
 };
 
-export default Marketing;
+export default TeamMeeting;
