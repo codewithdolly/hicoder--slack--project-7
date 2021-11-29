@@ -1,0 +1,13 @@
+.messageBox {
+  position: absolute;
+  bottom: 0;
+  border: 1px solid rgba(128, 128, 128, 0.479);
+  width: 75%;
+  margin: 1.5rem;
+  align-items: center;
+  .messageBox--option{
+      background-color: menu;
+      display: flex;
+      justify-content: space-between;
+  }
+}
