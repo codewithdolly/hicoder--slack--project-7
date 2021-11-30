@@ -1,0 +1,15 @@
+.chats{
+    align-items: center;
+    align-content: center;
+    .chats--date{
+        background-color: white;
+        border: 1px solid grey;
+        color: black;
+        text-transform: capitalize;
+        font-weight: 400;
+        border-radius: 5rem;
+        text-align: center;
+        align-items: center;
+        align-content: center;
+    }
+}
