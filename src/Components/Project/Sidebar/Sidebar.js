@@ -14,6 +14,7 @@ import MicNoneIcon from "@mui/icons-material/MicNone";
 import { Button } from "@mui/material";
 import Switch from '@mui/material/Switch';
 import HeadphonesOutlinedIcon from '@mui/icons-material/HeadphonesOutlined';
+import AppsIcon from '@mui/icons-material/Apps';
 
 const label = { inputProps: { 'aria-label': 'Switch demo' } };
 
@@ -53,6 +54,10 @@ const Sidebar = () => {
           <div className="sidebar--name">
             <CastConnectedRoundedIcon className="sidebar--name--icon" />
             <div>Slack Connect</div>
+          </div>
+          <div className="sidebar--name">
+            <AppsIcon className="sidebar--name--icon" />
+            <div>Apps</div>
           </div>
 
           <div className="sidebar--name">

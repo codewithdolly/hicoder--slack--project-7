@@ -2,7 +2,7 @@ import React from "react";
 import "./SlackBody.scss"
 import { Sidebar } from "../Index";
 import Development from "../Development/Development";
-
+import SlackApps from "../SlackApps/Index"
 
 
 
@@ -14,8 +14,8 @@ const SlackBody = () => {
           <Sidebar />
         </div>
         <div className="slackBody--right">
-        <Development />
-
+        {/* <Development /> */}
+        <SlackApps />
 
       </div>
       </div>
