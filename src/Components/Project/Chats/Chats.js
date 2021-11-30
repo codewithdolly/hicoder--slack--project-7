@@ -33,12 +33,19 @@ const Chats = () => {
             </p>
           </div>
         </div>
+
+        {messages.map((message)=>{
+            return
+            <h1>Hello {message.name}</h1>
+        })}
+
+
         <div className="chats--reaction">
           <AddReactionIcon className="chats--reaction--icon" />
           <ChatIcon className="chats--reaction--icon" />
           <ShareIcon className="chats--reaction--icon" />
           <BookmarkBorderIcon className="chats--reaction--icon" />
-          <PushPinIcon className="chats--reaction--icon" />
+          <PushPinIcon className="chats--reaction--icon chats--reaction--icon--pin" />
           <MoreVertIcon className="chats--reaction--icon" />
         </div>
       </div>
@@ -47,3 +54,48 @@ const Chats = () => {
 };
 
 export default Chats;
+
+let messages=[
+    {
+        name: "subh",
+        img: process.env.PUBLIC_URL + "../Images/subh.jpg",
+        time:"7:25AM",
+        tag: "@channel",
+        msg:"  Guys, Today we got one new big project. So congratulation & cheers!"
+    },
+    {
+        name: "Dolly",
+        img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
+        time:"7:30AM",
+        tag: "@channel",
+        msg:"Thank you!",
+    },
+    {
+        name: "Ankit Kumar",
+        img: process.env.PUBLIC_URL + "../Images/laptop.jpg",
+        time:"7:33AM",
+        tag: "@shubh",
+        msg:"Yeyy✌🤩",
+    },
+    {
+        name: "Sahmitha",
+        img: process.env.PUBLIC_URL + "../Images/sam.jpg",
+        time:"7:35AM",
+        tag: "@shubh",
+        msg:"Thank you and you too.😇"
+    },
+    {
+        name: "NAGARAJU KATTA",
+        img: process.env.PUBLIC_URL + "../Images/nagaraju.jpg",
+        time:"8:30AM",
+        tag: "@channel",
+        msg:"Hello Everyone, We have meeting in 10 minutes in meeting room."
+    },
+    {
+        name: "Dolly",
+        img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
+        time:"7:30AM",
+        tag: "",
+        msg:"Okay sir",
+    },
+]

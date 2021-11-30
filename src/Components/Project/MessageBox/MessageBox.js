@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "./MessageBox.scss";
 import TextField from "@mui/material/TextField";
 import BoltOutlinedIcon from '@mui/icons-material/BoltOutlined';

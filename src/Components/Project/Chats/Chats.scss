@@ -60,11 +60,14 @@
       font-size: 22px;
       margin: 0 5px;
     }
+    .chats--reaction--icon--pin{
+        transform: rotate(20deg);
+      }
   }
 }
 
 .chats--singleChat:hover {
-  background-color: rgba(192, 192, 192, 0.185);
+  background-color: rgba(192, 192, 192, 0.322);
   cursor: pointer;
   border: 0.5px solid rgba(128, 128, 128, 0.247);
 }
