@@ -45,8 +45,31 @@
       }
     }
   }
+  .chats--reaction {
+    display: none;
+    position: absolute;
+    right: 0;
+    justify-content: end;
+    margin: 1rem;
+    margin-top: -6rem;
+    padding: 5px 10px;
+    border: 0.5px solid silver;
+    border-radius: 5px;
+    background-color: white;
+    .chats--reaction--icon {
+      font-size: 22px;
+      margin: 0 5px;
+    }
+  }
 }
-.chats--singleChat:hover{
-    background-color: rgba(192, 192, 192, 0.363);
-    cursor: pointer;
+
+.chats--singleChat:hover {
+  background-color: rgba(192, 192, 192, 0.185);
+  cursor: pointer;
+  border: 0.5px solid rgba(128, 128, 128, 0.247);
+}
+
+.chats--singleChat:hover + .chats--reaction {
+  display: block;
+  color: rgba(56, 55, 55, 0.671);
 }

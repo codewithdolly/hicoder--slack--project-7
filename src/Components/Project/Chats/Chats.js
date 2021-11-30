@@ -3,6 +3,12 @@ import "./Chats.scss";
 import React from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import Shubh from "../Images/subh.jpg";
+import AddReactionIcon from "@mui/icons-material/AddReaction";
+import ChatIcon from "@mui/icons-material/Chat";
+import ShareIcon from "@mui/icons-material/Share";
+import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
+import PushPinIcon from "@mui/icons-material/PushPin";
+import MoreVertIcon from "@mui/icons-material/MoreVert";
 
 const Chats = () => {
   return (
@@ -26,6 +32,14 @@ const Chats = () => {
               project. So congratulation & cheers!
             </p>
           </div>
+        </div>
+        <div className="chats--reaction">
+          <AddReactionIcon className="chats--reaction--icon" />
+          <ChatIcon className="chats--reaction--icon" />
+          <ShareIcon className="chats--reaction--icon" />
+          <BookmarkBorderIcon className="chats--reaction--icon" />
+          <PushPinIcon className="chats--reaction--icon" />
+          <MoreVertIcon className="chats--reaction--icon" />
         </div>
       </div>
     </>
