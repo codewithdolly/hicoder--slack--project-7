@@ -1,6 +1,4 @@
 .chats{
-    align-items: center;
-    align-content: center;
     .chats--date{
         background-color: white;
         border: 1px solid grey;
@@ -8,8 +6,22 @@
         text-transform: capitalize;
         font-weight: 400;
         border-radius: 5rem;
-        text-align: center;
-        align-items: center;
-        align-content: center;
+        margin: 0;
+        position: absolute;
+        position: sticky;
+        left: 50%;
+    }
+    .chats--singleChat{
+        margin: 1rem;
+        display: flex;
+        .chats--singleChat--img, .chats--singleChat--imge{
+            width: 40px;
+            border-radius: 10px;
+            margin-right: 10px;
+        }
+        .chats--singleChat--details{
+        line-height: 10px;
+        color: red;
+        }
     }
 }
