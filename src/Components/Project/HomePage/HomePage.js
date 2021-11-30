@@ -10,7 +10,7 @@ import Menu from "@mui/material/Menu";
 import Button from "@mui/material/Button";
 import MenuItem from "@mui/material/MenuItem";
 
-const status = ["😃 Update your Status"];
+const status = ["😃 Update your Status >"];
 const settings = [
   "Profile",
   "Pouse Notifications",
