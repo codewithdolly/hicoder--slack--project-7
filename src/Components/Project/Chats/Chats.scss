@@ -20,8 +20,23 @@
             margin-right: 10px;
         }
         .chats--singleChat--details{
-        line-height: 10px;
-        color: red;
+        line-height: 0px;
+        margin-top: -10px;
+       
+        .chats--singleChat--details--time{
+            color: gray;
+            font-size: 10px;
+            text-align: center;
+           align-items: center;
+            margin: 5px;
+            margin-top: 20px;
+        }
+        .chats--singleChat--details--meggage{
+            margin: 0;
+            .chats--singleChat--details--meggage, span{
+                background-color: yellow;
+            }
+        }
         }
     }
 }
