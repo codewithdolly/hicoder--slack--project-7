@@ -1,4 +1,7 @@
 .chats {
+    height: 60vh;
+    overflow: hidden;
+    overflow-y: scroll;
   .chats--date {
     background-color: white;
     border: 1px solid grey;
@@ -14,6 +17,7 @@
   .chats--singleChat {
     padding: 1rem;
     display: flex;
+
     .chats--singleChat--img,
     .chats--singleChat--imge {
       width: 40px;
@@ -56,9 +60,12 @@
     border: 0.5px solid silver;
     border-radius: 5px;
     background-color: white;
+    overflow-y: scroll;
     .chats--reaction--icon {
       font-size: 22px;
       margin: 0 5px;
+      font-weight: 300;
+      float: none;
     }
     .chats--reaction--icon--pin{
         transform: rotate(20deg);

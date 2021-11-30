@@ -33,13 +33,6 @@ const Chats = () => {
             </p>
           </div>
         </div>
-
-        {messages.map((message)=>{
-            return
-            <h1>Hello {message.name}</h1>
-        })}
-
-
         <div className="chats--reaction">
           <AddReactionIcon className="chats--reaction--icon" />
           <ChatIcon className="chats--reaction--icon" />
@@ -48,6 +41,38 @@ const Chats = () => {
           <PushPinIcon className="chats--reaction--icon chats--reaction--icon--pin" />
           <MoreVertIcon className="chats--reaction--icon" />
         </div>
+
+        {messages.map((message) => {
+              return <> 
+              <div className="chats--singleChat">
+          <div className="chats--singleChat--img">
+            <img src={message.img} alt={message.name} className="chats--singleChat--imge" />
+          </div>
+          <div className="chats--singleChat--details">
+            <div style={{ display: "flex" }}>
+              <h3>{message.name}</h3>
+              <p className="chats--singleChat--details--time">{message.time}</p>
+            </div>
+            <p className="chats--singleChat--details--meggage">
+              <span>{message.tag}</span> {message.msg}
+            </p>
+          </div>
+        </div>
+        <div className="chats--reaction">
+          <AddReactionIcon className="chats--reaction--icon" />
+          <ChatIcon className="chats--reaction--icon" />
+          <ShareIcon className="chats--reaction--icon" />
+          <BookmarkBorderIcon className="chats--reaction--icon" />
+          <PushPinIcon className="chats--reaction--icon chats--reaction--icon--pin" />
+          <MoreVertIcon className="chats--reaction--icon" />
+        </div>
+              
+              </>
+            })}
+            
+
+
+       
       </div>
     </>
   );
@@ -57,32 +82,39 @@ export default Chats;
 
 let messages=[
     {
-        name: "subh",
-        img: process.env.PUBLIC_URL + "../Images/subh.jpg",
+        name: "Rana",
+        img: process.env.PUBLIC_URL + "../Images/rana.jpg",
         time:"7:25AM",
         tag: "@channel",
-        msg:"  Guys, Today we got one new big project. So congratulation & cheers!"
+        msg:" Hello Everyone, We got one new big project today. So congratulation & cheers!"
     },
     {
         name: "Dolly",
         img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
         time:"7:30AM",
-        tag: "@channel",
-        msg:"Thank you!",
+        tag: "@Rana",
+        msg:"yeyyyy!",
     },
     {
-        name: "Ankit Kumar",
-        img: process.env.PUBLIC_URL + "../Images/laptop.jpg",
+        name: "subh",
+        img: process.env.PUBLIC_URL + "../Images/subh.jpg",
+        time:"7:25AM",
+        tag: "@channel",
+        msg:"You will be having meeting so please be ready for it."
+    },
+    {
+        name: "Anand P",
+        img: process.env.PUBLIC_URL + "../Images/anand.jpg",
         time:"7:33AM",
-        tag: "@shubh",
-        msg:"Yeyy✌🤩",
+        tag: "@Shubh",
+        msg:"Okay.",
     },
     {
         name: "Sahmitha",
         img: process.env.PUBLIC_URL + "../Images/sam.jpg",
         time:"7:35AM",
-        tag: "@shubh",
-        msg:"Thank you and you too.😇"
+        tag: "@Rana",
+        msg:"Thank you!🤩"
     },
     {
         name: "NAGARAJU KATTA",
@@ -95,7 +127,21 @@ let messages=[
         name: "Dolly",
         img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
         time:"7:30AM",
-        tag: "",
-        msg:"Okay sir",
+        tag: "@NAGARAJU KATTA",
+        msg:" Sir Okay!",
+    },
+    {
+        name: "Shashank",
+        img: process.env.PUBLIC_URL + "../Images/shashank.jpg",
+        time:"7:35AM",
+        tag: "@channel",
+        msg:"ok"
+    },
+    {
+        name: "Amegh",
+        img: process.env.PUBLIC_URL + "../Images/amegh.jpg",
+        time:"7:35AM",
+        tag: "@NAGARAJU KATTA",
+        msg:" sir Okay..."
     },
 ]

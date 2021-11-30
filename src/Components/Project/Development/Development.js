@@ -4,7 +4,6 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
-import Dolly from "../Images/dolly2.jpg";
 import MessageBox from "../MessageBox/MessageBox";
 import Chats from "../Chats/Chats";
 
