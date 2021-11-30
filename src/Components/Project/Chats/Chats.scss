@@ -1,42 +1,52 @@
-.chats{
-    .chats--date{
-        background-color: white;
-        border: 1px solid grey;
-        color: black;
-        text-transform: capitalize;
-        font-weight: 400;
-        border-radius: 5rem;
+.chats {
+  .chats--date {
+    background-color: white;
+    border: 1px solid grey;
+    color: black;
+    text-transform: capitalize;
+    font-weight: 400;
+    border-radius: 5rem;
+    margin: 0;
+    position: absolute;
+    position: sticky;
+    left: 50%;
+  }
+  .chats--singleChat {
+    padding: 1rem;
+    display: flex;
+    .chats--singleChat--img,
+    .chats--singleChat--imge {
+      width: 40px;
+      border-radius: 10px;
+      margin-right: 10px;
+    }
+    .chats--singleChat--details {
+      line-height: 0px;
+      margin-top: -10px;
+
+      .chats--singleChat--details--time {
+        color: gray;
+        font-size: 10px;
+        text-align: center;
+        align-items: center;
+        margin: 5px;
+        margin-top: 20px;
+      }
+      .chats--singleChat--details--meggage {
         margin: 0;
-        position: absolute;
-        position: sticky;
-        left: 50%;
+        .chats--singleChat--details--meggage,
+        span {
+          background-color: rgba(255, 255, 0, 0.808);
+          font-size: 14px;
+          padding: 1px 5px;
+          border-radius: 2px;
+          font-weight: bold;
+        }
+      }
     }
-    .chats--singleChat{
-        margin: 1rem;
-        display: flex;
-        .chats--singleChat--img, .chats--singleChat--imge{
-            width: 40px;
-            border-radius: 10px;
-            margin-right: 10px;
-        }
-        .chats--singleChat--details{
-        line-height: 0px;
-        margin-top: -10px;
-       
-        .chats--singleChat--details--time{
-            color: gray;
-            font-size: 10px;
-            text-align: center;
-           align-items: center;
-            margin: 5px;
-            margin-top: 20px;
-        }
-        .chats--singleChat--details--meggage{
-            margin: 0;
-            .chats--singleChat--details--meggage, span{
-                background-color: yellow;
-            }
-        }
-        }
-    }
+  }
+}
+.chats--singleChat:hover{
+    background-color: rgba(192, 192, 192, 0.363);
+    cursor: pointer;
 }

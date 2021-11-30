@@ -9,7 +9,7 @@ const Chats = () => {
     <>
       <div className="chats">
         <Button className="chats--date">
-          Tuesday, November 25th{" "}
+          Tuesday, November 25th
           <KeyboardArrowDownOutlinedIcon color="action" />
         </Button>
         <div className="chats--singleChat">
@@ -21,10 +21,10 @@ const Chats = () => {
               <h3>Subh</h3>
               <p className="chats--singleChat--details--time">07:15 AM</p>
             </div>
-              <p className="chats--singleChat--details--meggage">
-                <span>@channel</span> Hello Guys, Today we got one new big
-                project. So congratulation & cheers!
-              </p>
+            <p className="chats--singleChat--details--meggage">
+              <span>@channel</span> Hello Guys, Today we got one new big
+              project. So congratulation & cheers!
+            </p>
           </div>
         </div>
       </div>
