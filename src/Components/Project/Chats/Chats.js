@@ -89,7 +89,7 @@ let messages = [
     msg: "Okay.",
   },
   {
-    name: "Sahmitha",
+    name: "Samhitha",
     img: process.env.PUBLIC_URL + "../Images/sam.jpg",
     time: "7:35AM",
     tag: "@Rana",

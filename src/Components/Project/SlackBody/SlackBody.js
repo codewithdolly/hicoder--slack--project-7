@@ -14,8 +14,8 @@ const SlackBody = () => {
           <Sidebar />
         </div>
         <div className="slackBody--right">
-        {/* <Development /> */}
-        <SlackApps />
+        <Development />
+        {/* <SlackApps /> */}
 
       </div>
       </div>
