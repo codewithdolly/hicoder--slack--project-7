@@ -1,6 +1,6 @@
 import React from "react";
 import "./SlackBody.scss"
-import { Sidebar } from "../Index";
+import { Sidebar } from "..";
 import Development from "../Development/Development";
 import SlackApps from "../SlackApps/Index"
 
