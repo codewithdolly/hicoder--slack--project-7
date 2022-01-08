@@ -33,61 +33,72 @@ function App() {
 
           {/* adding sidebar started */}
           <div className="sidebar">
-            <h2 className="sidebar--header">
-              TheMarketing <ArrowDropDownOutlinedIcon />
-              <div
-                className="sidebar--header--user"
-                style={{ display: "flex", textAlign: "center" }}
-              >
-                <div className="sidebar--header--user--status"></div>
-                <div className="sidebar--header--user--userName">
-                  Dolly Singh
-                </div>
-              </div>
-              <div className="sidebar--header--edit">
-                <EditOutlinedIcon />
-              </div>
-            </h2>
-
             {/* sidebar Threads */}
-            {threads.map((thread) => {
-              return (
-                <>
-                  <div className="slack-body">
+            <div className="sidebar--header">
+              <h2 className="sidebar--header-groupName">
+                TheMarketing <ArrowDropDownOutlinedIcon />
+                <div
+                  className="sidebar--header--user"
+                  style={{ display: "flex", textAlign: "center" }}
+                >
+                  <div className="sidebar--header--user--status"></div>
+                  <div className="sidebar--header--user--userName">
+                    Dolly Singh
+                  </div>
+                </div>
+                <div className="sidebar--header--edit">
+                  <EditOutlinedIcon />
+                </div>
+              </h2>
+
+              {threads.map((thread) => {
+                return (
+                  <>
                     <Link to={thread.link} className="Sidebar-route">
                       <div className="sidebar--name">
                         {thread.icon}
                         <div>{thread.name}</div>
                       </div>
                     </Link>
+                  </>
+                );
+              })}
+              {/* thread group adding */}
+              <Marketing />
+              <Channel />
+              <DirectMessage />
+
+              {/* Announcements start */}
+              <div className="sidebar--Announcement">
+                <MicNoneIcon />
+                <div> Announcement</div>
+                <Button
+                  variant="outlined"
+                  size="small"
+                  color="inherit"
+                  sx={{ ml: 2 }}
+                >
+                  {" "}
+                  <Switch {...label} size="small" />
+                  <HeadphonesOutlinedIcon sx={{ fontSize: "20px" }} />
+                </Button>
+              </div>
+            </div>
+            {/* Announcements start */}
+            {/* Sidebar ends */}
+
+            <div className="appRoutes">
+              {threads.map((thread) => {
+                return (
+                  <>
                     <Routes>
                       <Route path={thread.link} element={thread.chat} />
                     </Routes>
-                  </div>
-                </>
-              );
-            })}
-
-            <Marketing />
-            <Channel />
-            <DirectMessage />
-
-            <div className="sidebar--Announcement">
-              <MicNoneIcon />
-              <div> Announcement</div>
-              <Button
-                variant="outlined"
-                size="small"
-                color="inherit"
-                sx={{ ml: 2 }}
-              >
-                {" "}
-                <Switch {...label} size="small" color="secondary" />
-                <HeadphonesOutlinedIcon sx={{ fontSize: "20px" }} />
-              </Button>
+                  </>
+                );
+              })}
             </div>
           </div>
-          {/* Sidebar ends */}
         </div>
       </BrowserRouter>
     </>
