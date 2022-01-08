@@ -3,6 +3,7 @@ $text-color: white;
 $silver: silver;
 
 .development {
+  background-color: $text-color;
   .development--header {
     padding: 0 10px;
     display: flex;

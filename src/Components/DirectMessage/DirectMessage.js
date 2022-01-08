@@ -7,12 +7,12 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 const DirectMessage = () => {
   return (
     <>
-      <div className="singleMessage">
-        <div className="singleMessage--message">
-          <ArrowRightIcon className="singleMessage--message--icon" />
+      <div className="directMessage">
+        <div className="directMessage--message">
+          <ArrowRightIcon className="directMessage--message--icon" />
           <div>DirectMessage</div>
         </div>
-        <div className="singleMessage--hide">
+        <div className="directMessage--hide">
           <MoreVertIcon />
           <AddIcon />
         </div>

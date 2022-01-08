@@ -2,17 +2,15 @@ $them-color: #3f0e40;
 $text-color: white;
 
 .HomePage {
-  padding-top: 10px;
-  padding-bottom: 10px;
   display: flex;
   text-align: center;
   align-items: center;
   justify-content: space-between;
   background-color: $them-color;
   color: $text-color;
-  height: 5vh;
   .HomePage--search {
     display: flex;
+    margin: auto;
     .HomePage--search--searchBox {
       background-color: rgba(255, 255, 255, 0.116);
       color: $text-color;

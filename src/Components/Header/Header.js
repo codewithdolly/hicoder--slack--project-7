@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./Home.scss";
+import "./Header.scss";
 import profile from "../Images/dolly2.jpg";
 import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import HelpOutlineOutlinedIcon from "@mui/icons-material/HelpOutlineOutlined";
@@ -17,7 +17,7 @@ const settings = [
   "Sign out of the marketing",
 ];
 
-const HomePage = () => {
+const Header = () => {
   const [user, setuser] = useState(null);
 
   const openUserMenu = (event) => {
@@ -73,4 +73,4 @@ const HomePage = () => {
   );
 };
 
-export default HomePage;
+export default Header;

@@ -1,0 +1,26 @@
+$them-color: #3f0e40;
+$text-color: white;
+$silver: silver;
+
+.directMessage {
+  .directMessage--message {
+    color: $silver;
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    .directMessage--message--icon {
+      font-size: 30px;
+      justify-content: space-between;
+      display: flex;
+    }
+  }
+  .directMessage--hide {
+    display: none;
+  }
+  .directMessage--message:hover + .directMessage--hide {
+    display: block;
+    color: $text-color;
+    float: right;
+  }
+}

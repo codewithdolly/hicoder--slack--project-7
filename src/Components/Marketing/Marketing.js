@@ -6,10 +6,10 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import Toolbar from "@mui/material/Toolbar";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
-import FaceBook from "../FaceBook/FaceBook";
-import YouTube from "../YouTube/YouTube";
-import Instagram from "../Instagram/Instagram"
-import Twitter from "../Twitter/Twitter";
+import FaceBook from "./FaceBook";
+import YouTube from "./YouTube";
+import Instagram from "./Instagram"
+import Twitter from "./Twitter";
 
 const socialIcon = [<FaceBook />,<YouTube />, <Instagram />, <Twitter />];
 

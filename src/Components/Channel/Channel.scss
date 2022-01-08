@@ -2,28 +2,25 @@ $them-color: #3f0e40;
 $text-color: white;
 $silver: silver;
 
-.singleMessage {
-  height: 7vh;
-  .singleMessage--message {
+.channel {
+  .channel--message {
     color: $silver;
     padding-top: 3px;
     padding-bottom: 3px;
     display: flex;
-    padding-left: 20px;
+    margin-left: 10px;
     text-align: center;
     align-items: center;
-    .singleMessage--message--icon {
+    .channel--message--icon {
       font-size: 30px;
-      margin-right: 5px;
-      margin-left: -3px;
       justify-content: space-between;
       display: flex;
     }
   }
-  .singleMessage--hide {
+  .channel--hide {
     display: none;
   }
-  .singleMessage--message:hover + .singleMessage--hide {
+  .channel--message:hover + .channel--hide {
     display: block;
     color: $text-color;
     float: right;

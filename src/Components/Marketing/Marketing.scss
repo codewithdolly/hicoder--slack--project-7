@@ -3,21 +3,15 @@ $text-color: white;
 $silver: silver;
 
 .market {
-  height: 5vh;
   .market--marketing {
     color: $silver;
-    padding-top: 3px;
-    padding-bottom: 3px;
     display: flex;
+    padding: 0;
     text-align: center;
     align-items: center;
     .market--marketing--icon {
       font-size: 30px;
-      margin-right: 5px;
-      margin-left: -8px;
-      justify-content: space-between;
       display: flex;
-      transform:"rotate(180deg)"
     }
   }
  
@@ -32,8 +26,6 @@ $silver: silver;
     display: block;
     color: $text-color;
     float: right;
-    margin: 10px;
-    margin-left: 6rem;
     text-align: center;
   }
 }
