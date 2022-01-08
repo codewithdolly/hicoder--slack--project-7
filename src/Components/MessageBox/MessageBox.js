@@ -48,33 +48,15 @@ const MessageBox = () => {
           onChange={handleAlignment}
           aria-label="text alignment"
         >
-        <ToggleButton value="bold" aria-label="bold" sx={{height: "30px", width:"30px"}}>
-            <BoltOutlinedIcon  sx={{fontSize: "20px"}} />
+          {icons.map((icon)=>{
+            return <>
+            <ToggleButton value=" more" aria-label="more" sx={{height: "30px", width:"30px"}}>
+            {icon.leftIcon}
           </ToggleButton>
-          <ToggleButton value="bold" aria-label="bold" sx={{height: "30px", width:"30px"}}>
-            <FormatBoldIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="italic" aria-label="italic" sx={{height: "30px", width:"30px"}}>
-            <FormatItalicIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="underlined" aria-label="underlined" sx={{height: "30px", width:"30px"}}>
-            <FormatUnderlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="strike" aria-label="strike" sx={{height: "30px", width:"30px"}}>
-            <StrikethroughSOutlinedIcon  sx={{fontSize: "20px"}} />
-          </ToggleButton>
-          <ToggleButton value="code" aria-label="code" sx={{height: "30px", width:"30px"}}>
-            <CodeOutlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-
-          <ToggleButton value=" link" aria-label="link" sx={{height: "30px", width:"30px"}}>
-            <AddLinkOutlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="unorderd List" aria-label="unorderd List" sx={{height: "30px", width:"30px"}}>
-            <FormatListBulletedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
+            </>
+          })}
           <ToggleButton value="orderd List" aria-label="orderd List" sx={{height: "30px", width:"30px"}}>
-            <FormatListNumberedIcon  sx={{fontSize: "20px"}}/>
+            
           </ToggleButton>
           <ToggleButton value="textColor" aria-label="textColor"  sx={{height: "30px", width:"50px"}}>
             <FormatColorTextIcon  sx={{fontSize: "15px"}}/>
@@ -93,31 +75,13 @@ const MessageBox = () => {
           onChange={handleAlignment}
           aria-label="text alignment"
         >
-        <ToggleButton value="font" aria-label="font" sx={{height: "30px", width:"30px"}}>
-            <HdrAutoIcon  sx={{fontSize: "20px"}} />
+          {icons.map((icon)=>{
+            return <>
+            <ToggleButton value=" more" aria-label="more" sx={{height: "30px", width:"30px"}}>
+            {icon.rightIcon}
           </ToggleButton>
-          <ToggleButton value="tag" aria-label="tag" sx={{height: "30px", width:"30px"}}>
-            <AlternateEmailIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="emoji" aria-label="emoji" sx={{height: "30px", width:"30px"}}>
-            <TagFacesIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="attachment" aria-label="attachment" sx={{height: "30px", width:"30px"}}>
-            <AttachFileIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="video" aria-label="video" sx={{height: "30px", width:"30px"}}>
-            <VideocamOutlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-
-          <ToggleButton value=" audio" aria-label="audio" sx={{height: "30px", width:"30px"}}>
-            <MicNoneOutlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
-          <ToggleButton value="Send" aria-label="Send"  sx={{height: "30px", width:"50px"}}>
-            <SendOutlinedIcon />
-          </ToggleButton>
-          <ToggleButton value=" more" aria-label="more" sx={{height: "30px", width:"30px"}}>
-            <KeyboardArrowDownOutlinedIcon  sx={{fontSize: "20px"}}/>
-          </ToggleButton>
+            </>
+          })}
         </ToggleButtonGroup>
         </div>
         </div>
@@ -127,3 +91,41 @@ const MessageBox = () => {
 };
 
 export default MessageBox;
+
+
+
+let icons= [ 
+  {
+    leftIcon:<BoltOutlinedIcon  sx={{fontSize: "20px"}} />,
+    rightIcon: <HdrAutoIcon  sx={{fontSize: "20px"}} />,
+},
+{
+  leftIcon:<FormatBoldIcon  sx={{fontSize: "20px"}}/>,
+  rightIcon:<AlternateEmailIcon  sx={{fontSize: "20px"}}/>,
+},
+{
+  leftIcon:<FormatItalicIcon  sx={{fontSize: "20px"}}/>,
+  rightIcon: <TagFacesIcon  sx={{fontSize: "20px"}}/>,
+},
+{
+  leftIcon:<FormatUnderlinedIcon  sx={{fontSize: "20px"}}/>,
+  rightIcon: <AttachFileIcon  sx={{fontSize: "20px"}}/>,
+},
+{
+  leftIcon:<StrikethroughSOutlinedIcon  sx={{fontSize: "20px"}} />,
+  rightIcon:<MicNoneOutlinedIcon  sx={{fontSize: "20px"}}/>,
+},
+{
+  leftIcon:<CodeOutlinedIcon  sx={{fontSize: "20px"}}/>,
+  rightIcon:<SendOutlinedIcon />,
+},
+
+{
+  leftIcon:<AddLinkOutlinedIcon  sx={{fontSize: "20px"}}/>,
+},
+{
+  leftIcon:<FormatListBulletedIcon  sx={{fontSize: "20px"}}/>,
+},
+ 
+ ]
+

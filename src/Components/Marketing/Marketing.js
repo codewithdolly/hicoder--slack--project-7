@@ -27,7 +27,6 @@ const Marketing = () => {
   return (
     <>
       <div className="market">
-        <Toolbar>
           <div className="market--marketing" onClick={OpenGroupMenu}>
             <ArrowRightIcon className="market--marketing--icon" />
             <div>Marketing</div>
@@ -46,7 +45,6 @@ const Marketing = () => {
               <MenuItem id= "item" onClick={closeGroupMenu}>{setting}</MenuItem>
             ))}
           </Menu>
-        </Toolbar>
       </div>
     </>
   );

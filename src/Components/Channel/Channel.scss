@@ -3,6 +3,10 @@ $text-color: white;
 $silver: silver;
 
 .channel {
+  &:hover {
+    background-color: #300631;
+    color: $text-color;
+  }
   .channel--message {
     color: $silver;
     padding-top: 3px;
@@ -13,7 +17,6 @@ $silver: silver;
     align-items: center;
     .channel--message--icon {
       font-size: 30px;
-      justify-content: space-between;
       display: flex;
     }
   }

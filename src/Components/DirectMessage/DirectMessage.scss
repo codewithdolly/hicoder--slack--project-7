@@ -3,6 +3,10 @@ $text-color: white;
 $silver: silver;
 
 .directMessage {
+  &:hover {
+    background-color: #300631;
+    color: $text-color;
+  }
   .directMessage--message {
     color: $silver;
     display: flex;
@@ -22,5 +26,6 @@ $silver: silver;
     display: block;
     color: $text-color;
     float: right;
+    margin-top: -1.6rem;
   }
 }

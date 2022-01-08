@@ -3,22 +3,24 @@ $text-color: white;
 $silver: silver;
 
 .market {
+  &:hover {
+    background-color: #300631;
+    color: $text-color;
+  }
   .market--marketing {
     color: $silver;
     display: flex;
-    padding: 0;
-    text-align: center;
-    align-items: center;
+    margin-left: 10px;
     .market--marketing--icon {
       font-size: 30px;
       display: flex;
     }
   }
- 
+
   .market--hide {
     display: none;
   }
-  #item{
+  #item {
     background-color: $them-color;
   }
 
@@ -27,6 +29,6 @@ $silver: silver;
     color: $text-color;
     float: right;
     text-align: center;
+    margin-top: -1.6rem;
   }
 }
-

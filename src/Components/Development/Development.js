@@ -4,8 +4,7 @@ import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
-import MessageBox from "../MessageBox/MessageBox";
-import Chats from "../Chats/Chats";
+import Chats from "../Chats";
 
 const Development = () => {
   return (
@@ -22,7 +21,6 @@ const Development = () => {
           </AvatarGroup>
         </div>
         <Chats />
-        <MessageBox />
       </div>
     </>
   );
