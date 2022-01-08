@@ -71,15 +71,15 @@ function App() {
               {/* Announcements start */}
               <div className="sidebar--Announcement">
                 <MicNoneIcon />
-                <div> Announcement</div>
+                <h4> Announcement</h4>
                 <Button
                   variant="outlined"
                   size="small"
                   color="inherit"
-                  sx={{ ml: 2 }}
+                  sx={{ ml: 3 }}
                 >
                   {" "}
-                  <Switch {...label} size="small" />
+                  <Switch {...label} />
                   <HeadphonesOutlinedIcon sx={{ fontSize: "20px" }} />
                 </Button>
               </div>

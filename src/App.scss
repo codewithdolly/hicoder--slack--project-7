@@ -77,10 +77,12 @@ $silver: silver;
     color: $text-color;
     position: absolute;
     bottom: 0;
-    width: 18.3%;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
-    padding-left: 25px;
+    padding: 20px 5px;
+    padding-right: 36px;
+    align-items: center;
+    h4{
+      font-weight: 500;
+    }
   }
   .appRoutes{
     width: 80%;
