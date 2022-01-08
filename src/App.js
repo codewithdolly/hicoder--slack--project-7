@@ -1,13 +1,13 @@
 import React from 'react';
 import './App.scss';
-import { HomePage, SlackBody } from './Components/Project';
+import { HomePage, Sidebar } from './Components/Project';
 
 
 function App() {
   return (
     <div className="App">
       <HomePage />
-      <SlackBody />
+      <Sidebar />
       
     </div>
   );
