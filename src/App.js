@@ -262,18 +262,19 @@ const directMessage = [
     chat: <Development />,
   },
   {
-    image: "../Images/amegh.jpg",
-    name: "Amegh",
-    link: "/amegh",
-    chat: <Development />,
-  },
-  {
     image: "../Images/dolly.jpg",
     name: "Dolly",
     name2: <span className="me">you</span>,
     link: "/dolly",
     chat: <Development />,
   },
+  {
+    image: "../Images/amegh.jpg",
+    name: "Amegh",
+    link: "/amegh",
+    chat: <Development />,
+  },
+  
   {
     image: "../Images/nagaraju.jpg",
     name: "Nagaraju Katta",

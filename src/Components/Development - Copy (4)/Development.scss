@@ -1,0 +1,16 @@
+$them-color: #3f0e40;
+$text-color: white;
+$silver: silver;
+
+.development {
+  background-color: $text-color;
+  .development--header {
+    padding: 0 10px;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    margin-top: -3px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+  }
+}
