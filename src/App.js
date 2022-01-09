@@ -12,6 +12,11 @@ import {
   ProjectMeeting,
   General,
   TestingTeam,
+  Dolly,
+  Amegh,
+  NagarajuKatta,
+  Rana,
+Samhitha,
 } from "./Components";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -174,6 +179,10 @@ export default App;
 // Sidebar details in object
 const threads = [
   {
+    link: "/",
+    chat: <Development />,
+  },
+  {
     icon: <CommentRoundedIcon className="sidebar--name--icon" />,
     name: "Threads",
     link: "/threads",
@@ -266,38 +275,38 @@ const directMessage = [
     name: "Dolly",
     name2: <span className="me">you</span>,
     link: "/dolly",
-    chat: <Development />,
+    chat: <Dolly />,
   },
   {
     image: "../Images/amegh.jpg",
     name: "Amegh",
     link: "/amegh",
-    chat: <Development />,
+    chat: <Amegh />,
   },
   
   {
     image: "../Images/nagaraju.jpg",
     name: "Nagaraju Katta",
     link: "/nagaraju",
-    chat: <Development />,
+    chat: <NagarajuKatta />,
   },
   {
     image: "../Images/rana.jpg",
     name: "Rana",
     link: "/rana",
-    chat: <Development />,
+    chat: <Rana />,
   },
   {
     image: "../Images/sam.jpg",
     name: "Samhitha",
     link: "/sam",
-    chat: <Development />,
+    chat: <Samhitha />,
   },
 
   {
     icon: <AddIcon className="sidebar--name--addIcon2" />,
     name: "Add Teammates",
     link: "/development",
-    chat: <Development />,
+    chat: "",
   },
 ];

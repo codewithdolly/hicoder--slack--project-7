@@ -1,18 +1,18 @@
 import React from "react";
-import "./Development.scss";
+import "./Amegh.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import Chats from "../Chats";
 
-const Development = () => {
+const Amegh = () => {
   return (
     <>
-      <div className="development">
-        <div className="development--header">
+      <div className="amegh">
+        <div className="amegh--header">
           <Button color="inherit">
-            <h2 style={{padding:"18px"}}># Development</h2> <KeyboardArrowDownIcon />
+            <h2 style={{padding:"18px"}}>#Amegh</h2> <KeyboardArrowDownIcon />
           </Button>
           <AvatarGroup max={5}>
             {team.map((Image) => {
@@ -26,7 +26,7 @@ const Development = () => {
   );
 };
 
-export default Development;
+export default Amegh;
 
 const team = [
   {
