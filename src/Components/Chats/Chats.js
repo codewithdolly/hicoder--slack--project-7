@@ -40,7 +40,7 @@ const Chats = () => {
                 </div>
                 <div className="chats--singleChat--details">
                   <div style={{ display: "flex" }}>
-                    <h3>{message.name}</h3>
+                    <h4>{message.name}</h4>
                     <p className="chats--singleChat--details--time">
                       {message.time}
                     </p>
@@ -99,7 +99,7 @@ let messages = [
     msg: "Thank you!🤩",
   },
   {
-    name: "NAGARAJU KATTA",
+    name: "Nagaraju Katta",
     img: process.env.PUBLIC_URL + "../Images/nagaraju.jpg",
     time: "8:30AM",
     tag: "@channel",
@@ -109,7 +109,7 @@ let messages = [
     name: "Dolly",
     img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
     time: "7:30AM",
-    tag: "@NAGARAJU KATTA",
+    tag: "@Nagaraju Katta",
     msg: " Sir Okay!",
   },
   {

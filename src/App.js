@@ -7,6 +7,11 @@ import {
   DirectMessage,
   Marketing,
   Channel,
+  SlackApps,
+  BusinessAnalysis,
+  ProjectMeeting,
+  General,
+  TestingTeam,
 } from "./Components";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -52,41 +57,63 @@ function App() {
                   <EditOutlinedIcon />
                 </div>
               </h2>
-
-              {threads.map((thread) => {
-                return (
-                  <>
-                    <Link to={thread.link} className="Sidebar-route">
-                      <div className="sidebar--name">
-                        {thread.icon}
-                        <div>{thread.name}</div>
-                      </div>
-                    </Link>
-                  </>
-                );
-              })}
-              {/* thread group adding */}
-              <Marketing />
-              <Channel />
-              {/* channel content */}
-              {channels.map((thread) => {
-                return (
-                  <>
-                    <Link to={thread.link} className="Sidebar-route">
-                      <div className="sidebar--name">
-                        {thread.icon}
-                        <div>{thread.name}</div>
-                      </div>
-                    </Link>
-                  </>
-                );
-              })}
-              <DirectMessage />
+              <div className="sidebar--chatbox">
+                {threads.map((thread) => {
+                  return (
+                    <>
+                      <Link to={thread.link} className="Sidebar-route">
+                        <div className="sidebar--name">
+                          {thread.icon}
+                          <div>{thread.name}</div>
+                        </div>
+                      </Link>
+                    </>
+                  );
+                })}
+                {/* thread group adding */}
+                <Marketing />
+                <Channel />
+                {/* channel content */}
+                {channels.map((thread) => {
+                  return (
+                    <>
+                      <Link to={thread.link} className="Sidebar-route">
+                        <div className="sidebar--name">
+                          {thread.icon}
+                          <div>{thread.name}</div>
+                        </div>
+                      </Link>
+                    </>
+                  );
+                })}
+                <DirectMessage />
+                {/* Direct message group */}
+                {directMessage.map((thread) => {
+                  return (
+                    <>
+                      <Link to={thread.link} className="Sidebar-route">
+                        <div className="sidebar--name sidebar--name--message">
+                          <img
+                            src={process.env.PUBLIC_URL + thread.image}
+                            alt=""
+                            width="20px"
+                            style={{ marginRight: "5px" }}
+                          />
+                          {thread.icon}
+                          <div>
+                            {thread.name} {thread.name2}
+                          </div>
+                        </div>
+                      </Link>
+                    </>
+                  );
+                })}
+              </div>
 
               {/* Announcements start */}
               <div className="sidebar--Announcement">
                 <MicNoneIcon />
-                <h4> Announcement</h4>
+                <h3> Announcement</h3>
                 <Button
                   variant="outlined"
                   size="small"
@@ -94,15 +121,16 @@ function App() {
                   sx={{ ml: 3 }}
                 >
                   {" "}
-                  <Switch {...label} />
-                  <HeadphonesOutlinedIcon sx={{ fontSize: "20px" }} />
+                  <Switch {...label} size="small" />
+                  <HeadphonesOutlinedIcon size="small" />
                 </Button>
               </div>
             </div>
-            {/* Announcements start */}
+            {/* Announcements ends */}
 
             {/* Sidebar ends */}
 
+            {/* Routing Starts */}
             <div className="appRoutes">
               {threads.map((thread) => {
                 return (
@@ -113,7 +141,17 @@ function App() {
                   </>
                 );
               })}
+
               {channels.map((thread) => {
+                return (
+                  <>
+                    <Routes>
+                      <Route path={thread.link} element={thread.chat} />
+                    </Routes>
+                  </>
+                );
+              })}
+              {directMessage.map((thread) => {
                 return (
                   <>
                     <Routes>
@@ -124,6 +162,7 @@ function App() {
               })}
             </div>
           </div>
+          {/* Routing Starts */}
         </div>
       </BrowserRouter>
     </>
@@ -145,6 +184,12 @@ const threads = [
     name: "All DMS",
     link: "/all-dms",
     chat: <Development />,
+  },
+  {
+    icon: <AppsIcon className="sidebar--name--icon" />,
+    name: "Apps",
+    link: "/app",
+    chat: <SlackApps />,
   },
   {
     icon: <AlternateEmailIcon className="sidebar--name--icon" />,
@@ -177,47 +222,86 @@ const threads = [
 const channels = [
   {
     icon: <TagIcon className="sidebar--name--icon" />,
-    name: "Development",
+    name: "Development Team",
     link: "/development",
     chat: <Development />,
   },
   {
     icon: <TagIcon className="sidebar--name--icon" />,
-    name: "Business Analysis",
+    name: "Business Analysis Team",
     link: "/business-analysis",
-    chat: <Development />,
+    chat: <BusinessAnalysis />,
   },
   {
     icon: <TagIcon className="sidebar--name--icon" />,
-    name: "Project Meeting",
+    name: "Project Meeting Team",
     link: "/projectmeeting",
-    chat: <Development />,
+    chat: <ProjectMeeting />,
   },
   {
     icon: <TagIcon className="sidebar--name--icon" />,
-    name: "general",
+    name: "Testing Team",
+    link: "/testing",
+    chat: <TestingTeam />,
+  },
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "General",
     link: "/general",
-    chat: <Development />,
-  },
-  {
-    icon: <TagIcon className="sidebar--name--icon" />,
-    name: "Randum",
-    link: "/randum",
-    chat: <Development />,
+    chat: <General />,
   },
 
   {
     icon: <AddIcon className="sidebar--name--addIcon" />,
     name: "Add channels",
-    link: "/development",
-    chat: <Development />,
+    link: "/",
+    chat: "",
   },
 ];
 
+// direct messages
 const directMessage = [
   {
-    icon: <AddIcon className="sidebar--name--addIcon" />,
-    name: "Add channels",
+    image: "../Images/slack2.png",
+    name: "Slackbot",
+    link: "/slackpot",
+    chat: <Development />,
+  },
+  {
+    image: "../Images/amegh.jpg",
+    name: "Amegh",
+    link: "/amegh",
+    chat: <Development />,
+  },
+  {
+    image: "../Images/dolly.jpg",
+    name: "Dolly",
+    name2: <span className="me">you</span>,
+    link: "/dolly",
+    chat: <Development />,
+  },
+  {
+    image: "../Images/nagaraju.jpg",
+    name: "Nagaraju Katta",
+    link: "/nagaraju",
+    chat: <Development />,
+  },
+  {
+    image: "../Images/rana.jpg",
+    name: "Rana",
+    link: "/rana",
+    chat: <Development />,
+  },
+  {
+    image: "../Images/sam.jpg",
+    name: "Samhitha",
+    link: "/sam",
+    chat: <Development />,
+  },
+
+  {
+    icon: <AddIcon className="sidebar--name--addIcon2" />,
+    name: "Add Teammates",
     link: "/development",
     chat: <Development />,
   },
