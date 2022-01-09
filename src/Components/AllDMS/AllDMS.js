@@ -1,18 +1,18 @@
 import React from "react";
-import "./Development.scss";
+import "./AllDMS.scss";
 import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import { Button } from "@mui/material";
 import Avatar from "@mui/material/Avatar";
 import AvatarGroup from "@mui/material/AvatarGroup";
 import Chats from "./Chats";
 
-const Development = () => {
+const AllDMS = () => {
   return (
     <>
-      <div className="development">
-        <div className="development--header">
+      <div className="allDMS">
+        <div className="allDMS--header">
           <Button color="inherit">
-            <h2 style={{padding:"18px"}}>#Development</h2> <KeyboardArrowDownIcon />
+            <h2 style={{padding:"18px"}}>#All DMS</h2> <KeyboardArrowDownIcon />
           </Button>
           <AvatarGroup max={5}>
             {team.map((Image) => {
@@ -26,7 +26,7 @@ const Development = () => {
   );
 };
 
-export default Development;
+export default AllDMS;
 
 const team = [
   {

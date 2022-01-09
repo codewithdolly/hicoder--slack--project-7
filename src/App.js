@@ -17,6 +17,10 @@ import {
   NagarajuKatta,
   Rana,
 Samhitha,
+Threads,
+AllDMS,
+MentionsAndReactions,
+SlackConnect,
 } from "./Components";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -186,25 +190,25 @@ const threads = [
     icon: <CommentRoundedIcon className="sidebar--name--icon" />,
     name: "Threads",
     link: "/threads",
-    chat: <Development />,
+    chat: <Threads />,
   },
   {
     icon: <ForumRoundedIcon className="sidebar--name--icon" />,
     name: "All DMS",
     link: "/all-dms",
-    chat: <Development />,
+    chat: <AllDMS />,
   },
   {
     icon: <AlternateEmailIcon className="sidebar--name--icon" />,
     name: "Mentions & Reactions",
     link: "/motion-reaction",
-    chat: <Development />,
+    chat: <MentionsAndReactions />,
   },
   {
     icon: <CastConnectedRoundedIcon className="sidebar--name--icon" />,
     name: "Slack Connect",
     link: "/slack-connect",
-    chat: <Development />,
+    chat: <SlackConnect />,
   },
   {
     icon: <AppsIcon className="sidebar--name--icon" />,
