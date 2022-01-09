@@ -20,6 +20,8 @@ import { Button } from "@mui/material";
 import Switch from "@mui/material/Switch";
 import HeadphonesOutlinedIcon from "@mui/icons-material/HeadphonesOutlined";
 import AppsIcon from "@mui/icons-material/Apps";
+import TagIcon from "@mui/icons-material/Tag";
+import AddIcon from "@mui/icons-material/Add";
 
 const label = { inputProps: { "aria-label": "Switch demo" } };
 
@@ -66,6 +68,19 @@ function App() {
               {/* thread group adding */}
               <Marketing />
               <Channel />
+              {/* channel content */}
+              {channels.map((thread) => {
+                return (
+                  <>
+                    <Link to={thread.link} className="Sidebar-route">
+                      <div className="sidebar--name">
+                        {thread.icon}
+                        <div>{thread.name}</div>
+                      </div>
+                    </Link>
+                  </>
+                );
+              })}
               <DirectMessage />
 
               {/* Announcements start */}
@@ -85,10 +100,20 @@ function App() {
               </div>
             </div>
             {/* Announcements start */}
+
             {/* Sidebar ends */}
 
             <div className="appRoutes">
               {threads.map((thread) => {
+                return (
+                  <>
+                    <Routes>
+                      <Route path={thread.link} element={thread.chat} />
+                    </Routes>
+                  </>
+                );
+              })}
+              {channels.map((thread) => {
                 return (
                   <>
                     <Routes>
@@ -144,6 +169,56 @@ const threads = [
     icon: <MoreVertRoundedIcon className="sidebar--name--icon2" />,
     name: "More",
     link: "/more",
+    chat: <Development />,
+  },
+];
+
+//add channel
+const channels = [
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "Development",
+    link: "/development",
+    chat: <Development />,
+  },
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "Business Analysis",
+    link: "/business-analysis",
+    chat: <Development />,
+  },
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "Project Meeting",
+    link: "/projectmeeting",
+    chat: <Development />,
+  },
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "general",
+    link: "/general",
+    chat: <Development />,
+  },
+  {
+    icon: <TagIcon className="sidebar--name--icon" />,
+    name: "Randum",
+    link: "/randum",
+    chat: <Development />,
+  },
+
+  {
+    icon: <AddIcon className="sidebar--name--addIcon" />,
+    name: "Add channels",
+    link: "/development",
+    chat: <Development />,
+  },
+];
+
+const directMessage = [
+  {
+    icon: <AddIcon className="sidebar--name--addIcon" />,
+    name: "Add channels",
+    link: "/development",
     chat: <Development />,
   },
 ];
