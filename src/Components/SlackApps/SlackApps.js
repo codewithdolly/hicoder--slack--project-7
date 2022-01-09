@@ -71,7 +71,7 @@ const SlackApps = () => {
                 <div>
                   <h3>{Paid.name}</h3>
                   <p>{Paid.content}</p>
-                  <Button variant="contained" color="success" center fullWidth sx={{mt:6, mb:2}}>
+                  <Button variant="contained" color="success" center fullWidth sx={{mt:5, mb:2}}>
                     Add
                   </Button>
                 </div>
@@ -99,13 +99,13 @@ const Apps = [
     name: "Google Drive",
     img: process.env.PUBLIC_URL + "../Images/drive.png",
     content:
-      " Create new Google Docs, Slides, and Sheets files.Import an existing file from Google Drive into a channel or direct message",
+      " Create new Google Docs, Slides, and Sheets files.Import an existing file from Google Drive into a channel or direct message. Google Drive into a channel or direct message",
   },
   {
     name: "Zoom",
     img: process.env.PUBLIC_URL + "../Images/zoom.png",
     content:
-      "Easily Start a video Zoom Meeting directely from slack. Zoom Meetings is a software program developed by Zoom Video Communications.",
+      "Easily Start a video Zoom Meeting directely from slack. Zoom Meetings is a software program developed by Zoom Video Communications. software program developed by Zoom.",
   },
 ];
 
@@ -120,88 +120,108 @@ const PaidApps = [
     name: "Twitter",
     img: process.env.PUBLIC_URL + "../Images/twitter.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://twitter.com/",
   },
 
   {
     name: "Calender",
     img: process.env.PUBLIC_URL + "../Images/calender.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://www.google.com/calendar/about/",
   },
 
   {
     name: "Outlook",
     img: process.env.PUBLIC_URL + "../Images/outlook.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://outlook.live.com/owa/",
   },
 
   {
-    name: "Jeera",
+    name: "Jeera Cloud",
     img: process.env.PUBLIC_URL + "../Images/jeera.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://hcjuly2021.slack.com/apps/A2RPP3NFR-jira-cloud?utm_source=in-prod&utm_medium=inprod-btn_app_install-index-click&tab=more_info",
   },
   {
     name: "Poll",
     img: process.env.PUBLIC_URL + "../Images/poll.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://hcjuly2021.slack.com/apps/A0HFW7MR6-simple-poll?utm_source=in-prod&utm_medium=inprod-btn_app_install-index-click&tab=more_info",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Google Analytics",
+    img: process.env.PUBLIC_URL + "../Images/analitics.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://www.google.com/search?q=Analitics&oq=Analitics&aqs=chrome..69i57.270j0j9&sourceid=chrome&ie=UTF-8",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Brave Browser",
+    img: process.env.PUBLIC_URL + "../Images/brave.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://brave.com/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Devtool",
+    img: process.env.PUBLIC_URL + "../Images/devtool.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://developer.chrome.com/docs/devtools/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Google Drive",
+    img: process.env.PUBLIC_URL + "../Images/Drive.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://www.google.com/intl/en_in/drive/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Twitter",
+    img: process.env.PUBLIC_URL + "../Images/twitter.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Vscode",
+    img: process.env.PUBLIC_URL + "../Images/vscode.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://code.visualstudio.com/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Elementor",
+    img: process.env.PUBLIC_URL + "../Images/elementor.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://elementor.com/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Skype",
+    img: process.env.PUBLIC_URL + "../Images/Skype.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://www.skype.com/en/",
   },
   {
-    name: "Poll",
-    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    name: "Envato",
+    img: process.env.PUBLIC_URL + "../Images/envato.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link:"https://www.envato.com/",
   },
+
+  {
+    name: "Outlook",
+    img: process.env.PUBLIC_URL + "../Images/outlook.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://outlook.live.com/owa/",
+  },
+  {
+    name: "Git",
+    img: process.env.PUBLIC_URL + "../Images/git.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://git-scm.com/",
+  },
+  {
+    name: "Search Console",
+    img: process.env.PUBLIC_URL + "../Images/searchconsole.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://search.google.com/search-console/about",
+  },
+
   
 ];
