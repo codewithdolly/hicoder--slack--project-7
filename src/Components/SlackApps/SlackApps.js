@@ -2,7 +2,6 @@ import React from "react";
 import "./SlackApps.scss";
 import AutoAwesomeIcon from "@mui/icons-material/AutoAwesome";
 import { Button } from "@mui/material";
-import SavedSearchIcon from "@mui/icons-material/SavedSearch";
 import TextField from "@mui/material/TextField";
 
 const SlackApps = () => {
@@ -22,12 +21,14 @@ const SlackApps = () => {
             </Button>
           </div>
         </div>
+        <div className="slackApps--freeApps">
         <TextField
           id="outlined-basic"
           placeholder="Search by Name Or category (e.g productivity or sales)"
           variant="outlined"
+          size="small"
           fullWidth
-          sx={{ my: 1 }}
+          sx={{ my: 1}}
         />
         <Button color="info" sx={{ m: 2, mx: 3 }}>
           3 app in TheMarketing
@@ -55,7 +56,7 @@ const SlackApps = () => {
         <Button color="info" sx={{ m: 2, mx: 3 }}>
         Recommended apps
         </Button>
-        <div className="">
+        <div>
           {PaidApps.map((Paid) => {
             return (
               <div className="slackApps--freeApp">
@@ -70,7 +71,7 @@ const SlackApps = () => {
                 <div>
                   <h3>{Paid.name}</h3>
                   <p>{Paid.content}</p>
-                  <Button variant="outlined" color="inherit" center fullWidth>
+                  <Button variant="contained" color="success" center fullWidth sx={{mt:6, mb:2}}>
                     Add
                   </Button>
                 </div>
@@ -79,6 +80,7 @@ const SlackApps = () => {
           })}
           </div>
         </div>
+      </div>
       </div>
     </>
   );
@@ -112,33 +114,94 @@ const PaidApps = [
     name: "Gmail",
     img: process.env.PUBLIC_URL + "../Images/mail.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
   {
     name: "Twitter",
     img: process.env.PUBLIC_URL + "../Images/twitter.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
 
   {
     name: "Calender",
     img: process.env.PUBLIC_URL + "../Images/calender.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
 
   {
     name: "Outlook",
     img: process.env.PUBLIC_URL + "../Images/outlook.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
 
   {
     name: "Jeera",
     img: process.env.PUBLIC_URL + "../Images/jeera.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
   {
     name: "Poll",
     img: process.env.PUBLIC_URL + "../Images/poll.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  {
+    name: "Poll",
+    img: process.env.PUBLIC_URL + "../Images/poll.png",
+    content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
+    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+  },
+  
 ];

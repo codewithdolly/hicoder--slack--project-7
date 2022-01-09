@@ -186,12 +186,6 @@ const threads = [
     chat: <Development />,
   },
   {
-    icon: <AppsIcon className="sidebar--name--icon" />,
-    name: "Apps",
-    link: "/app",
-    chat: <SlackApps />,
-  },
-  {
     icon: <AlternateEmailIcon className="sidebar--name--icon" />,
     name: "Mentions & Reactions",
     link: "/motion-reaction",
@@ -207,7 +201,7 @@ const threads = [
     icon: <AppsIcon className="sidebar--name--icon" />,
     name: "Apps",
     link: "/app",
-    chat: <Development />,
+    chat: <SlackApps />,
   },
 
   {
