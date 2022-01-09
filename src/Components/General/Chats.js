@@ -63,27 +63,7 @@ export default Chats;
 
 // Messages in objects
 let messages = [
-  {
-    name: "Rana",
-    img: process.env.PUBLIC_URL + "../Images/rana.jpg",
-    time: "7:25AM",
-    tag: "@channel",
-    msg: " Hello Everyone, We have meeting sharp 10 AM.",
-  },
-  {
-    name: "subh",
-    img: process.env.PUBLIC_URL + "../Images/subh.jpg",
-    time: "9:25AM",
-    tag: "@channel",
-    msg: "You will be having meeting so please be ready for it.",
-  },
-  {
-    name: "Dolly",
-    img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
-    time: "9:30AM",
-    tag: "@Rana",
-    msg: "Okay!",
-  },
+  
   {
     name: "Anand P",
     img: process.env.PUBLIC_URL + "../Images/anand.jpg",
@@ -92,39 +72,32 @@ let messages = [
     msg: "do we have meeting?",
   },
   {
+    name: "subh",
+    img: process.env.PUBLIC_URL + "../Images/subh.jpg",
+    time: "9:25AM",
+    tag: "@Dolly",
+    msg: "Call to Nagaraju sir",
+  },
+  {
     name: "Samhitha",
     img: process.env.PUBLIC_URL + "../Images/sam.jpg",
     time: "9:35AM",
     tag: "@Anand p",
     msg: "yes",
   },
-  {
-    name: "Nagaraju Katta",
-    img: process.env.PUBLIC_URL + "../Images/nagaraju.jpg",
-    time: "9:50AM",
-    tag: "@channel",
-    msg: "We will be haveing meeting in 10 minutes in meeting room.",
-  },
-  {
-    name: "Dolly",
-    img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
-    time: "7:30AM",
-    tag: "@Nagaraju Katta",
-    msg: "Okay!",
-  },
+  
   {
     name: "Amegh",
     img: process.env.PUBLIC_URL + "../Images/amegh.jpg",
-    time: "7:35AM",
+    time: "9:55AM",
     tag: "@NAGARAJU KATTA",
     msg: " sir Okay...",
   },
   {
     name: "Shashank",
     img: process.env.PUBLIC_URL + "../Images/shashank.jpg",
-    time: "7:35AM",
+    time: "9:55AM",
     tag: "@channel",
     msg: "ok",
   },
-
 ];

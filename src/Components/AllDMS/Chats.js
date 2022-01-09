@@ -92,6 +92,13 @@ let messages = [
     msg: "do we have meeting?",
   },
   {
+    name: "subh",
+    img: process.env.PUBLIC_URL + "../Images/subh.jpg",
+    time: "9:25AM",
+    tag: "@Dolly",
+    msg: "Call to Nagaraju sir",
+  },
+  {
     name: "Samhitha",
     img: process.env.PUBLIC_URL + "../Images/sam.jpg",
     time: "9:35AM",
@@ -108,23 +115,43 @@ let messages = [
   {
     name: "Dolly",
     img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
-    time: "7:30AM",
+    time: "9:50AM",
+    tag: "@Nagaraju Katta",
+    msg: "Okay!",
+  },
+  {
+    name: "Nagaraju Katta",
+    img: process.env.PUBLIC_URL + "../Images/nagaraju.jpg",
+    time: "9:50AM",
+    tag: "@channel",
+    msg: "Send me those sheets of yesterday's meetings.",
+  },
+  {
+    name: "Dolly",
+    img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
+    time: "9:52AM",
     tag: "@Nagaraju Katta",
     msg: "Okay!",
   },
   {
     name: "Amegh",
     img: process.env.PUBLIC_URL + "../Images/amegh.jpg",
-    time: "7:35AM",
+    time: "9:55AM",
     tag: "@NAGARAJU KATTA",
     msg: " sir Okay...",
   },
   {
     name: "Shashank",
     img: process.env.PUBLIC_URL + "../Images/shashank.jpg",
-    time: "7:35AM",
+    time: "9:55AM",
     tag: "@channel",
     msg: "ok",
   },
-
+  {
+    name: "Dolly",
+    img: process.env.PUBLIC_URL + "../Images/dolly2.jpg",
+    time: "10:00AM",
+    tag: "@channel",
+    msg: "guys, join on meeting",
+  },
 ];

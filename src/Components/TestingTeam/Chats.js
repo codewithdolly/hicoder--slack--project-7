@@ -68,7 +68,7 @@ let messages = [
     img: process.env.PUBLIC_URL + "../Images/rana.jpg",
     time: "8:25AM",
     tag: "@channel",
-    msg: " Good Morning Guys, what is the status of last project?",
+    msg: " Guys what is the status of last project?",
   },
   {
     name: "Anand P",
