@@ -12,7 +12,7 @@ const TestingTeam = () => {
       <div className="testingTeam">
         <div className="testingTeam--header">
           <Button color="inherit">
-            <h2 style={{padding:"18px"}}># testingTeam</h2> <KeyboardArrowDownIcon />
+            <h2 style={{padding:"18px"}}>#TestingTeam</h2> <KeyboardArrowDownIcon />
           </Button>
           <AvatarGroup max={5}>
             {team.map((Image) => {

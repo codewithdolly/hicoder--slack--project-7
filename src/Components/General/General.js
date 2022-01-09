@@ -12,7 +12,7 @@ const General = () => {
       <div className="general">
         <div className="general--header">
           <Button color="inherit">
-            <h2 style={{padding:"18px"}}># general</h2> <KeyboardArrowDownIcon />
+            <h2 style={{padding:"18px"}}>#General</h2> <KeyboardArrowDownIcon />
           </Button>
           <AvatarGroup max={5}>
             {team.map((Image) => {
