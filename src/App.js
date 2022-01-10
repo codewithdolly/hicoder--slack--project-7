@@ -206,7 +206,7 @@ const threads = [
   {
     icon: <CastConnectedRoundedIcon className="sidebar--name--icon" />,
     name: "Slack Connect",
-    link: "/",
+    link: "/slack-connect",
     chat: <Development />,
   },
   {
