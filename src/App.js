@@ -16,11 +16,10 @@ import {
   Amegh,
   NagarajuKatta,
   Rana,
-Samhitha,
-Threads,
-AllDMS,
-MentionsAndReactions,
-SlackConnect,
+  Samhitha,
+  Threads,
+  AllDMS,
+  MentionsAndReactions,
 } from "./Components";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -287,7 +286,7 @@ const directMessage = [
     link: "/amegh",
     chat: <Amegh />,
   },
-  
+
   {
     image: "../Images/nagaraju.jpg",
     name: "Nagaraju Katta",

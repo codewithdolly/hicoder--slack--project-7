@@ -12,17 +12,14 @@ import ToggleButtonGroup from "@mui/material/ToggleButtonGroup";
 import StrikethroughSOutlinedIcon from "@mui/icons-material/StrikethroughSOutlined";
 import CodeOutlinedIcon from "@mui/icons-material/CodeOutlined";
 import AddLinkOutlinedIcon from "@mui/icons-material/AddLinkOutlined";
-import FormatListNumberedIcon from "@mui/icons-material/FormatListNumbered";
 import FormatListBulletedIcon from "@mui/icons-material/FormatListBulleted";
 import FormatColorTextIcon from "@mui/icons-material/FormatColorText";
 import HdrAutoIcon from "@mui/icons-material/HdrAuto";
 import AlternateEmailIcon from "@mui/icons-material/AlternateEmail";
 import TagFacesIcon from "@mui/icons-material/TagFaces";
 import AttachFileIcon from "@mui/icons-material/AttachFile";
-import VideocamOutlinedIcon from "@mui/icons-material/VideocamOutlined";
 import MicNoneOutlinedIcon from "@mui/icons-material/MicNoneOutlined";
 import SendOutlinedIcon from "@mui/icons-material/SendOutlined";
-import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 
 const MessageBox = () => {
   const [alignment, setAlignment] = React.useState("left");
