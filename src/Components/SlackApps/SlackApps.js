@@ -71,7 +71,7 @@ const SlackApps = () => {
                 <div>
                   <h3>{Paid.name}</h3>
                   <p>{Paid.content}</p>
-                  <Button variant="contained" color="success" center fullWidth sx={{mt:5, mb:2}}>
+                  <Button href={Paid.link} variant="contained" color="success" center fullWidth sx={{mt:5, mb:2}}>
                     Add
                   </Button>
                 </div>
