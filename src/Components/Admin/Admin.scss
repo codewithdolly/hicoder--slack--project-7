@@ -2,12 +2,12 @@ $them-color: #3f0e40;
 $text-color: white;
 $silver: silver;
 
-.channel {
+.admin {
   &:hover {
     background-color: #300631;
     color: $text-color;
   }
-  .channel--message {
+  .admin--message {
     color: $silver;
     padding-top: 3px;
     padding-bottom: 3px;
@@ -15,15 +15,15 @@ $silver: silver;
     margin-left: 10px;
     text-align: center;
     align-items: center;
-    .channel--message--icon {
+    .admin--message--icon {
       font-size: 30px;
       display: flex;
     }
   }
-  .channel--hide {
+  .admin--hide {
     display: none;
   }
-  .channel--message:hover + .channel--hide {
+  .admin--message:hover + .admin--hide {
     display: block;
     color: $text-color;
     float: right;

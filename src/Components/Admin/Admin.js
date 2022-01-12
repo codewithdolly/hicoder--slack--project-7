@@ -1,18 +1,18 @@
 import React from "react";
-import "./Channel.scss";
+import "./Admin.scss";
 import ArrowRightIcon from "@mui/icons-material/ArrowRight";
 import AddIcon from "@mui/icons-material/Add";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
 
-const Channel = () => {
+const Admin = () => {
   return (
     <>
-      <div className="channel">
-        <div className="channel--message">
-          <ArrowRightIcon className="channel--message--icon" />
-          <div>Channel</div>
+      <div className="admin">
+        <div className="admin--message">
+          <ArrowRightIcon className="admin--message--icon" />
+          <div>Admin</div>
         </div>
-        <div className="channel--hide">
+        <div className="admin--hide">
           <MoreVertIcon />
           <AddIcon />
         </div>
@@ -21,4 +21,4 @@ const Channel = () => {
   );
 };
 
-export default Channel;
+export default Admin;

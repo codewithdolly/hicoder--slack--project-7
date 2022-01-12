@@ -20,6 +20,7 @@ import {
   Threads,
   AllDMS,
   MentionsAndReactions,
+  Admin,
 } from "./Components";
 import ArrowDropDownOutlinedIcon from "@mui/icons-material/ArrowDropDownOutlined";
 import EditOutlinedIcon from "@mui/icons-material/EditOutlined";
@@ -80,6 +81,7 @@ function App() {
                 })}
                 {/* thread group adding */}
                 <Marketing />
+                <Admin />
                 <Channel />
                 {/* channel content */}
                 {channels.map((thread) => {
