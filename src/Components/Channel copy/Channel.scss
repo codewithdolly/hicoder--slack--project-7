@@ -1,0 +1,33 @@
+$them-color: #3f0e40;
+$text-color: white;
+$silver: silver;
+
+.channel {
+  &:hover {
+    background-color: #300631;
+    color: $text-color;
+  }
+  .channel--message {
+    color: $silver;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    display: flex;
+    margin-left: 10px;
+    text-align: center;
+    align-items: center;
+    .channel--message--icon {
+      font-size: 30px;
+      display: flex;
+    }
+  }
+  .channel--hide {
+    display: none;
+  }
+  .channel--message:hover + .channel--hide {
+    display: block;
+    color: $text-color;
+    float: right;
+    margin: 10px;
+    margin-top: -1.6rem;
+  }
+}
