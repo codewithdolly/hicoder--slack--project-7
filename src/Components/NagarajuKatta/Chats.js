@@ -8,7 +8,7 @@ import ShareIcon from "@mui/icons-material/Share";
 import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import PushPinIcon from "@mui/icons-material/PushPin";
 import MoreVertIcon from "@mui/icons-material/MoreVert";
-import MessageBox from "./MessageBox";
+import MessageBox from "../MessageBox";
 
 const Chats = () => {
   return (

@@ -17,4 +17,3 @@ export {default as NagarajuKatta} from "./NagarajuKatta"
 export {default as Rana} from "./Rana"
 export {default as Samhitha} from "./Samhitha" 
 export {default as Admin} from "./Admin"
-
