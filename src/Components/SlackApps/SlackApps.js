@@ -22,65 +22,72 @@ const SlackApps = () => {
           </div>
         </div>
         <div className="slackApps--freeApps">
-        <TextField
-          id="outlined-basic"
-          placeholder="Search by Name Or category (e.g productivity or sales)"
-          variant="outlined"
-          size="small"
-          fullWidth
-          sx={{ my: 1}}
-        />
-        <Button color="info" sx={{ m: 2, mx: 3 }}>
-          3 app in TheMarketing
-        </Button>
-        <br />
-        {Apps.map((app) => {
-          return (
-            <div className="slackApps--freeApp">
-              <div className="slackApps--freeApp--img">
-                <img
-                  src={app.img}
-                  alt=""
-                  width="40px"
-                  className="slackApps--freeApp--img"
-                />
-              </div>
-              <div>
-                <h3>{app.name}</h3>
-                <p>{app.content}</p>
-              </div>
-            </div>
-          );
-        })}
-        <div className="slackApps--paid">
-        <Button color="info" sx={{ m: 2, mx: 3 }}>
-        Recommended apps
-        </Button>
-        <div>
-          {PaidApps.map((Paid) => {
+          <TextField
+            id="outlined-basic"
+            placeholder="Search by Name Or category (e.g productivity or sales)"
+            variant="outlined"
+            size="small"
+            fullWidth
+            sx={{ my: 1 }}
+          />
+          <Button color="info" sx={{ m: 2, mx: 3 }}>
+            3 app in TheMarketing
+          </Button>
+          <br />
+          {Apps.map((app) => {
             return (
               <div className="slackApps--freeApp">
                 <div className="slackApps--freeApp--img">
                   <img
-                    src={Paid.img}
+                    src={app.img}
                     alt=""
                     width="40px"
                     className="slackApps--freeApp--img"
                   />
                 </div>
                 <div>
-                  <h3>{Paid.name}</h3>
-                  <p>{Paid.content}</p>
-                  <Button href={Paid.link} variant="contained" color="success" center fullWidth sx={{mt:5, mb:2}}>
-                    Add
-                  </Button>
+                  <h3>{app.name}</h3>
+                  <p>{app.content}</p>
                 </div>
               </div>
             );
           })}
+          <div className="slackApps--paid">
+            <Button color="info" sx={{ m: 2, mx: 3 }}>
+              Recommended apps
+            </Button>
+            <div>
+              {PaidApps.map((Paid) => {
+                return (
+                  <div className="slackApps--freeApp">
+                    <div className="slackApps--freeApp--img">
+                      <img
+                        src={Paid.img}
+                        alt=""
+                        width="40px"
+                        className="slackApps--freeApp--img"
+                      />
+                    </div>
+                    <div>
+                      <h3>{Paid.name}</h3>
+                      <p>{Paid.content}</p>
+                      <Button
+                        href={Paid.link}
+                        variant="contained"
+                        color="success"
+                        center
+                        fullWidth
+                        sx={{ mt: 5, mb: 2 }}
+                      >
+                        Add
+                      </Button>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
-      </div>
       </div>
     </>
   );
@@ -114,114 +121,112 @@ const PaidApps = [
     name: "Gmail",
     img: process.env.PUBLIC_URL + "../Images/mail.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
+    link: "https://www.google.com/search?q=gmail.com&oq=gmail.com&aqs=chrome..69i58j69i57j69i61l2.10702j0j4&sourceid=chrome&ie=UTF-8",
   },
   {
     name: "Twitter",
     img: process.env.PUBLIC_URL + "../Images/twitter.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://twitter.com/",
+    link: "https://twitter.com/",
   },
 
   {
     name: "Calender",
     img: process.env.PUBLIC_URL + "../Images/calender.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/calendar/about/",
+    link: "https://www.google.com/calendar/about/",
   },
 
   {
     name: "Outlook",
     img: process.env.PUBLIC_URL + "../Images/outlook.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://outlook.live.com/owa/",
+    link: "https://outlook.live.com/owa/",
   },
 
   {
     name: "Jeera Cloud",
     img: process.env.PUBLIC_URL + "../Images/jeera.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://www.atlassian.com/enterprise/cloud",
+    link: "https://www.atlassian.com/enterprise/cloud",
   },
   {
     name: "Poll",
     img: process.env.PUBLIC_URL + "../Images/poll.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://simplepoll.rocks/",
+    link: "https://simplepoll.rocks/",
   },
   {
     name: "Google Analytics",
     img: process.env.PUBLIC_URL + "../Images/analitics.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/search?q=Analitics&oq=Analitics&aqs=chrome..69i57.270j0j9&sourceid=chrome&ie=UTF-8",
+    link: "https://www.google.com/search?q=Analitics&oq=Analitics&aqs=chrome..69i57.270j0j9&sourceid=chrome&ie=UTF-8",
   },
   {
     name: "Brave Browser",
     img: process.env.PUBLIC_URL + "../Images/brave.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://brave.com/",
+    link: "https://brave.com/",
   },
   {
     name: "Devtool",
     img: process.env.PUBLIC_URL + "../Images/devtool.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://developer.chrome.com/docs/devtools/",
+    link: "https://developer.chrome.com/docs/devtools/",
   },
   {
     name: "Google Drive",
     img: process.env.PUBLIC_URL + "../Images/Drive.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.google.com/intl/en_in/drive/",
+    link: "https://www.google.com/intl/en_in/drive/",
   },
   {
     name: "Twitter",
     img: process.env.PUBLIC_URL + "../Images/twitter.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D",
+    link: "https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D",
   },
   {
     name: "Vscode",
     img: process.env.PUBLIC_URL + "../Images/vscode.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://code.visualstudio.com/",
+    link: "https://code.visualstudio.com/",
   },
   {
     name: "Elementor",
     img: process.env.PUBLIC_URL + "../Images/elementor.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://elementor.com/",
+    link: "https://elementor.com/",
   },
   {
     name: "Skype",
     img: process.env.PUBLIC_URL + "../Images/Skype.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.skype.com/en/",
+    link: "https://www.skype.com/en/",
   },
   {
     name: "Envato",
     img: process.env.PUBLIC_URL + "../Images/envato.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://www.envato.com/",
+    link: "https://www.envato.com/",
   },
 
   {
     name: "Outlook",
     img: process.env.PUBLIC_URL + "../Images/outlook.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://outlook.live.com/owa/",
+    link: "https://outlook.live.com/owa/",
   },
   {
     name: "Git",
     img: process.env.PUBLIC_URL + "../Images/git.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://git-scm.com/",
+    link: "https://git-scm.com/",
   },
   {
     name: "Search Console",
     img: process.env.PUBLIC_URL + "../Images/searchconsole.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit.  ",
-    link:"https://search.google.com/search-console/about",
+    link: "https://search.google.com/search-console/about",
   },
-
-  
 ];
