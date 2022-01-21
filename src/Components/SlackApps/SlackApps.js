@@ -141,7 +141,7 @@ const PaidApps = [
     name: "Jeera Cloud",
     img: process.env.PUBLIC_URL + "../Images/jeera.png",
     content: "Lorem ipsum, dolor sit amet consectetur adipisicing elit. ",
-    link:"https://hcjuly2021.slack.com/apps/A2RPP3NFR-jira-cloud?utm_source=in-prod&utm_medium=inprod-btn_app_install--click&tab=more_info",
+    link:"https://www.atlassian.com/enterprise/cloud",
   },
   {
     name: "Poll",
