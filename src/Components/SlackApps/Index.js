@@ -1,1 +1,1 @@
-export {default} from "./SlackApps"
+export {default} from "./SlackApps";
