@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,iBAAiB,CAAC;EAChB,gBAAgB,EAJL,KAAK;CAcjB;;AAXD,AAEE,iBAFe,CAEf,yBAAyB,CAAC;EACxB,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,0BAA0B;CACpD",
+    "sources": [
+        "../src/Components/BusinessAnalysis/BusinessAnalysis.scss"
+    ],
+    "names": [],
+    "file": "BusinessAnalysis.css"
+}

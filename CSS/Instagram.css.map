@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "../src/Components/Marketing/Instagram.scss"
+    ],
+    "names": [],
+    "file": "Instagram.css"
+}

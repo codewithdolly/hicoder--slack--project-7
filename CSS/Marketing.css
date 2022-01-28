@@ -1,0 +1,36 @@
+.market:hover {
+  background-color: #300631;
+  color: white;
+}
+
+.market .market--marketing {
+  color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+}
+
+.market .market--marketing .market--marketing--icon {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.market .market--hide {
+  display: none;
+}
+
+.market #item {
+  background-color: #3f0e40;
+}
+
+.market .market--marketing:hover + .market--hide {
+  display: block;
+  color: white;
+  float: right;
+  text-align: center;
+  margin-top: -1.6rem;
+}
+/*# sourceMappingURL=Marketing.css.map */

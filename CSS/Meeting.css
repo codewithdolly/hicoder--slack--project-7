@@ -1,0 +1,43 @@
+.Meeting {
+  height: 7vh;
+}
+
+.Meeting .Meeting--message {
+  color: silver;
+  padding-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.Meeting .Meeting--message .Meeting--message--icon {
+  font-size: 30px;
+  margin-right: 5px;
+  margin-left: -8px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transform: "rotate(180deg)";
+          transform: "rotate(180deg)";
+}
+
+.Meeting .Meeting--hide {
+  display: none;
+}
+
+.Meeting .Meeting--message:hover + .Meeting--hide {
+  display: block;
+  color: white;
+  float: right;
+  margin: 10px;
+  margin-left: 4rem;
+  text-align: center;
+}
+/*# sourceMappingURL=Meeting.css.map */

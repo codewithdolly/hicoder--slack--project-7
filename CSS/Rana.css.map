@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,KAAK,CAAC;EACJ,gBAAgB,EAJL,KAAK;CAcjB;;AAXD,AAEE,KAFG,CAEH,aAAa,CAAC;EACZ,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,0BAA0B;CACpD",
+    "sources": [
+        "../src/Components/Rana/Rana.scss"
+    ],
+    "names": [],
+    "file": "Rana.css"
+}

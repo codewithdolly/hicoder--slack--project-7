@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,cAAc,CAAC;EACb,gBAAgB,EAJL,KAAK;CAcjB;;AAXD,AAEE,cAFY,CAEZ,sBAAsB,CAAC;EACrB,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,0BAA0B;CACpD",
+    "sources": [
+        "../src/Components/NagarajuKatta/NagarajuKatta.scss"
+    ],
+    "names": [],
+    "file": "NagarajuKatta.css"
+}

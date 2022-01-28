@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAIA,AAAA,SAAS,CAAC;EACR,gBAAgB,EAJL,KAAK;CAcjB;;AAXD,AAEE,SAFO,CAEP,iBAAiB,CAAC;EAChB,OAAO,EAAE,MAAM;EACf,OAAO,EAAE,IAAI;EACb,eAAe,EAAE,aAAa;EAC9B,UAAU,EAAE,MAAM;EAClB,WAAW,EAAE,MAAM;EACnB,UAAU,EAAE,IAAI;EAChB,aAAa,EAAE,GAAG,CAAC,KAAK,CAAC,0BAA0B;CACpD",
+    "sources": [
+        "../src/Components/Samhitha/Samhitha.scss"
+    ],
+    "names": [],
+    "file": "Samhitha.css"
+}

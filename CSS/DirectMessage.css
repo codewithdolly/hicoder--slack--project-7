@@ -1,0 +1,38 @@
+.directMessage:hover {
+  background-color: #300631;
+  color: white;
+}
+
+.directMessage .directMessage--message {
+  color: silver;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.directMessage .directMessage--message .directMessage--message--icon {
+  font-size: 30px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.directMessage .directMessage--hide {
+  display: none;
+}
+
+.directMessage .directMessage--message:hover + .directMessage--hide {
+  display: block;
+  color: white;
+  float: right;
+  margin-top: -1.6rem;
+}
+/*# sourceMappingURL=DirectMessage.css.map */

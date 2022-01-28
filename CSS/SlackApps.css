@@ -1,0 +1,56 @@
+.slackApps .slackApps--head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 8.8px 2rem;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.397);
+}
+
+.slackApps .slackApps--head .slackApps--head--paid {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.slackApps .slackApps--freeApps {
+  height: 82vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.slackApps .slackApps--freeApps .slackApps--freeApp {
+  display: inline-block;
+  width: 24%;
+  margin: 0 1.5rem;
+  padding: 1.5rem;
+  border: 2px solid rgba(128, 128, 128, 0.705);
+  -webkit-box-shadow: 2px 2px 3px silver;
+          box-shadow: 2px 2px 3px silver;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+}
+
+.slackApps .slackApps--freeApps .slackApps--freeApp .slackApps--freeApp--img {
+  width: 40px;
+  border-radius: 4px;
+}
+
+.slackApps .slackApps--freeApps .slackApps--paid {
+  border: 2px solid gray;
+  margin-top: 5rem;
+  padding-bottom: 3rem;
+}
+/*# sourceMappingURL=SlackApps.css.map */

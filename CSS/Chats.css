@@ -1,0 +1,93 @@
+.chats {
+  height: 65vh;
+  overflow: hidden;
+  overflow-y: scroll;
+}
+
+.chats .chats--date {
+  background-color: white;
+  border: 1px solid grey;
+  color: black;
+  text-transform: capitalize;
+  font-weight: 400;
+  border-radius: 5rem;
+  position: absolute;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 40%;
+}
+
+.chats .chats--singleChat {
+  padding: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chats .chats--singleChat .chats--singleChat--img,
+.chats .chats--singleChat .chats--singleChat--imge {
+  width: 40px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.chats .chats--singleChat .chats--singleChat--details--time {
+  color: gray;
+  font-size: 10px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 5px;
+}
+
+.chats .chats--singleChat .chats--singleChat--details--meggage {
+  margin: 0;
+}
+
+.chats .chats--singleChat .chats--singleChat--details--meggage .chats--singleChat--details--meggage,
+.chats .chats--singleChat .chats--singleChat--details--meggage span {
+  background-color: rgba(255, 255, 0, 0.808);
+  font-size: 14px;
+  padding: 1px 5px;
+  border-radius: 2px;
+  font-weight: bold;
+}
+
+.chats .chats--reaction {
+  display: none;
+  left: -100;
+  float: right;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  border: 0.5px solid silver;
+  border-radius: 5px;
+  background-color: white;
+  color: rgba(56, 55, 55, 0.671);
+  margin-top: -5.6rem;
+  margin-right: 1rem;
+  padding: 5px;
+}
+
+.chats .chats--reaction .chats--reaction--icon {
+  font-size: 22px;
+  margin: 0 5px;
+  font-weight: 300;
+}
+
+.chats .chats--reaction .chats--reaction--icon--pin {
+  -webkit-transform: rotate(20deg);
+          transform: rotate(20deg);
+}
+
+.chats--singleChat:hover {
+  background-color: rgba(192, 192, 192, 0.322);
+  cursor: pointer;
+  border: 0.5px solid rgba(128, 128, 128, 0.247);
+}
+
+.chats--singleChat:hover + .chats--reaction {
+  display: inline-block;
+}
+/*# sourceMappingURL=Chats.css.map */

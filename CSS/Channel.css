@@ -1,0 +1,38 @@
+.channel:hover {
+  background-color: #300631;
+  color: white;
+}
+
+.channel .channel--message {
+  color: silver;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-left: 10px;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.channel .channel--message .channel--message--icon {
+  font-size: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.channel .channel--hide {
+  display: none;
+}
+
+.channel .channel--message:hover + .channel--hide {
+  display: block;
+  color: white;
+  float: right;
+  margin: 10px;
+  margin-top: -1.6rem;
+}
+/*# sourceMappingURL=Channel.css.map */

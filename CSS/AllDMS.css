@@ -1,0 +1,20 @@
+.allDMS {
+  background-color: white;
+}
+
+.allDMS .allDMS--header {
+  padding: 0 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: -3px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.521);
+}
+/*# sourceMappingURL=AllDMS.css.map */
