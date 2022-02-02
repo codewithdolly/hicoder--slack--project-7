@@ -3,7 +3,7 @@ export {default as Development} from "./Development";
 export {default as Marketing} from "./Marketing";
 export {default as Threads} from "./Threads";
 export {default as AllDMS} from "./AllDMS";
-export {default as SlackApps} from "./SlackApps"
+export {default as SlackApps} from "./SlackApps";
 export {default as MentionsAndReactions} from "./MentionsAndReactions";
 export {default as DirectMessage} from "./DirectMessage";
 export {default as Channel} from "./Channel";
