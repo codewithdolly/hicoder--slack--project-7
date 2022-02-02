@@ -7,7 +7,7 @@ import {
   DirectMessage,
   Marketing,
   Channel,
-  // SlackApps,
+  SlackApps,
   BusinessAnalysis,
   ProjectMeeting,
   General,
@@ -215,7 +215,7 @@ const threads = [
     icon: <AppsIcon className="sidebar--name--icon" />,
     name: "Apps",
     link: "/app",
-    // chat: <SlackApps />,
+    chat: <SlackApps />,
   },
 
   {
