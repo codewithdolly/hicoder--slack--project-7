@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import "./Chats.scss";
-import React from "react";
+import React, { useEffect, useState } from "react";
 import KeyboardArrowDownOutlinedIcon from "@mui/icons-material/KeyboardArrowDownOutlined";
 import AddReactionIcon from "@mui/icons-material/AddReaction";
 import ChatIcon from "@mui/icons-material/Chat";
@@ -11,11 +11,24 @@ import MoreVertIcon from "@mui/icons-material/MoreVert";
 import MessageBox from "../MessageBox";
 
 const Chats = () => {
+  // debugger
+const [show, setShow]= useState(false);
+
+const date= ()=>{
+
+  setShow(show === true)
+}
+
+// date();
+
+
+
   return (
     <>
-      <div className="chats">
+      <div className="chats" >
         <Button className="chats--date">
-          Tuesday, November 30th
+        {show ? "Tuesday, November 30th" : " "}
+          
           <KeyboardArrowDownOutlinedIcon color="action" />
         </Button>
 
